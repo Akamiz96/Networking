@@ -1,2 +1,8 @@
-# Networking
-Comprehensive repository for computer networks: OSI/TCP/IP models, layer explanations, GNS3/Packet Tracer design, exercises &amp; workshops.
+![Banner](images\Banner_Repository.png)
+
+| |
+| :-: |
+| Comprehensive repository for computer networks subjects: OSI - TCP/IP models, layer explanations, GNS3/Packet Tracer design, exercises &amp; workshops. |
+
+----
+
