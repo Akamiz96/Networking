@@ -1,4 +1,4 @@
-![Banner](images\Banner_Repository.png)
+![Banner](images/Banner_Repository.png)
 
 | |
 | :-: |
