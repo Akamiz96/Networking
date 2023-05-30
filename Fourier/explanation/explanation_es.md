@@ -1,3 +1,5 @@
+![Welcome](https://www.nobbot.com/wp-content/uploads/2021/05/transformada-de-fourier-que-es.jpg)
+
 # ✒️ Teorema de Fourier ✒️
 
 El físico y matemático francés [Jean–Baptiste Joseph Fourier](https://es.wikipedia.org/wiki/Joseph_Fourier) (1768−1830) formuló en 1807 un teorema que afirma que: 
@@ -5,6 +7,9 @@ El físico y matemático francés [Jean–Baptiste Joseph Fourier](https://es.wi
 > Cualquier **señal periódica** *g(t)* definida en el tiempo, puede ser descompuesta en una componente de **Voltaje Directo** *(dc)*  y un **número infinito de señales seno y coseno** *(armónicos)*.
 
 Es decir, una señal periódica se puede construir con una **suma infinita de señales seno y coseno**.
+
+![Ejemplo](/images/Fourier/Ejemplo_Fourier.gif)
+Imagen tomada de: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Bases teóricas ➗
 
@@ -24,7 +29,7 @@ donde:
 
 Ejemplo de una señal seno se encuentra a continuación $y = sin(x)$: 
 
-![Sine Wave](/images/sine.png)
+![Sine Wave](/images/Fourier/sine.png)
 
 ---
 Una señal cosenoidal está representada matemáticamente por:
@@ -43,7 +48,7 @@ donde:
 
 Ejemplo de una señal coseno se encuentra a continuación $y = sin(x)$: 
 
-![Cosine Wave](/images/cosine.png)
+![Cosine Wave](/images/Fourier/cosine.png)
 
 ---
 La relación entre la señal seno y la señal coseno radica en: 
@@ -143,5 +148,3 @@ Siendo:
 - *T* el periodo de la señal que se quiere transformar
 - *f* indica la frecuencia del armónico fundamental 
 - *t* indica el tiempo
-
-https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html

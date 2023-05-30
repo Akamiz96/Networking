@@ -1,3 +1,5 @@
+![Welcome](https://www.nobbot.com/wp-content/uploads/2021/05/transformada-de-fourier-que-es.jpg)
+
 # ✒️ Fourier's theorem ✒️ 
 
 The French physicist and mathematician [Jean–Baptiste Joseph Fourier](https://es.wikipedia.org/wiki/Joseph_Fourier) (1768−1830) formulated a theorem in 1807 stating that:
@@ -5,6 +7,9 @@ The French physicist and mathematician [Jean–Baptiste Joseph Fourier](https://
 > Any **periodic signal** *g(t)* defined in time, can be decomposed into a component of **Forward Voltage** *(dc)* and an **infinite number of sine and cosine signals** *(harmonics)*.
 
 That is, a periodic signal can be built with an **infinite sum of sine and cosine signals**.
+
+![Ejemplo](/images/Fourier/Ejemplo_Fourier.gif)
+Image taken from: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Theoretical bases ➗
 
@@ -24,7 +29,7 @@ where:
 
 Example of a sine signal is below $y = sin(x)$:
 
-![Sine Wave](/images/sine.png)
+![Sine Wave](/images/Fourier/sine.png)
 
 ---
 A cosine signal is represented mathematically by:
@@ -43,7 +48,7 @@ where:
 
 Example of a cosine signal is below $y = sin(x)$:
 
-![Cosine Wave](/images/cosine.png)
+![Cosine Wave](/images/Fourier/cosine.png)
 
 ---
 The relationship between the sine signal and the cosine signal lies in:
