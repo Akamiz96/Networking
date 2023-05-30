@@ -54,6 +54,10 @@ sin(\theta)=cos(90^∘−\theta)
 \end{align}
 $$
 
+Por esta razón el Teorema de Fourier se puede reescribir como:
+
+> Cualquier **señal periódica** *g(t)* definida en el tiempo, puede ser descompuesta en una componente de **Voltaje Directo** *(dc)*  y un **número infinito de señales seno** *(armónicos)*.
+
 ---
 
 ### ➕ Definición Teorema de Fourier ➕
@@ -70,7 +74,7 @@ $$
 
 Siendo: 
 - *dc* indica el valor de la componente de voltaje directo
-- *$C_n$* indica el coeficiente de la función seno
+- $C_n$ indica el coeficiente de la función seno
 - *n* indica el número del armónico de la componente
 - *f* indica la frecuencia del armónico fundamental 
 - *t* indica el tiempo

@@ -54,6 +54,10 @@ sin(\theta)=cos(90^∘−\theta)
 \end{align}
 $$
 
+For this reason, Fourier's Theorem can be rewritten as:
+
+> Any **periodic signal** *g(t)* defined in time, can be decomposed into a component of **Forward Voltage** *(dc)* and an **infinite number of sine signals** *( harmonics)*.
+
 ---
 
 ### ➕ Fourier's Theorem Definition ➕
