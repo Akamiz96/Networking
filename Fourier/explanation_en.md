@@ -12,7 +12,7 @@ A sinusoidal signal is represented mathematically by:
 
 $$
 \begin{align}
-f~1~(t) = a * sin(2\pi f t + \varphi)
+f_1(t) = a * sin(2\pi f t + \varphi)
 \end{align}
 $$
 
@@ -22,7 +22,7 @@ where:
 - *t* indicates time
 - $\varphi$ indicates the initial phase of the sine signal
 
-Example of a sine signal is below ($y = sin(x)$):
+Example of a sine signal is below $y = sin(x)$:
 
 ![Sine Wave](/images/sine.png)
 
@@ -31,7 +31,7 @@ A cosine signal is represented mathematically by:
 
 $$
 \begin{align}
-f~1~(t) = a * sin(2\pi f t + \varphi)
+f_1(t) = a * sin(2\pi f t + \varphi)
 \end{align}
 $$
 
@@ -41,7 +41,7 @@ where:
 - *t* indicates time
 - $\varphi$ indicates the initial phase of the cosine signal
 
-Example of a cosine signal is below ($y = sin(x)$):
+Example of a cosine signal is below $y = sin(x)$:
 
 ![Cosine Wave](/images/cosine.png)
 
@@ -73,7 +73,7 @@ Being:
 - *n* indicates the number of the harmonic of the component
 - *f* indicates the frequency of the fundamental harmonic
 - *t* indicates time
-- *$\varphi_n$* indicates the initial phase of the sine signal
+- $\varphi_n$ indicates the initial phase of the sine signal
 
 To calculate the variable values ​​of this equation, the following operations must be carried out.
 

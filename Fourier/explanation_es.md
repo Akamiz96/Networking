@@ -22,7 +22,7 @@ donde:
 - *t* indica el tiempo
 - $\varphi$ indica la fase inicial de la señal seno 
 
-Ejemplo de una señal seno se encuentra a continuación ($y = sin(x)$): 
+Ejemplo de una señal seno se encuentra a continuación $y = sin(x)$: 
 
 ![Sine Wave](/images/sine.png)
 
@@ -41,7 +41,7 @@ donde:
 - *t* indica el tiempo
 - $\varphi$ indica la fase inicial de la señal coseno 
 
-Ejemplo de una señal coseno se encuentra a continuación ($y = sin(x)$): 
+Ejemplo de una señal coseno se encuentra a continuación $y = sin(x)$: 
 
 ![Cosine Wave](/images/cosine.png)
 
@@ -74,7 +74,7 @@ Siendo:
 - *n* indica el número del armónico de la componente
 - *f* indica la frecuencia del armónico fundamental 
 - *t* indica el tiempo
-- *$\varphi_n$* indica la fase inicial de la señal seno 
+- $\varphi_n$ indica la fase inicial de la señal seno 
 
 Para calcular los valores variables de esta ecuación hay que realizar las siguientes operaciones. 
 
