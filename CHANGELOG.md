@@ -11,3 +11,5 @@
 - Adds sine and cosine signals to the explanation files. - 30/05/2023
 - Adds explanation for the different equations. - 30/05/2023
 - Adds `gif` Fourier example - 30/05/2023
+---
+- Adds example files in spanish and english - 31/05/2023
