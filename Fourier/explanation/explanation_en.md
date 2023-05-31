@@ -1,4 +1,4 @@
-![Welcome](https://www.nobbot.com/wp-content/uploads/2021/05/transformada-de-fourier-que-es.jpg)
+![Welcome](/images/Fourier/Banner_Ondas.jpg)
 
 # ✒️ Fourier's theorem ✒️ 
 

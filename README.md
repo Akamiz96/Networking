@@ -8,5 +8,5 @@
 
 ## Table of Content
 1. Physical Layer
-   1. [✒️ Fourier's theorem ✒️](Fourier/explanation_en.md)
-   2. [✒️ Teorema de Fourier ✒️](Fourier/explanation_es.md)
+   1. [✒️ Fourier's theorem ✒️](Fourier/explanation/explanation_en.md)
+   2. [✒️ Teorema de Fourier ✒️](Fourier/explanation/explanation_es.md)
