@@ -13,3 +13,4 @@
 - Adds `gif` Fourier example - 30/05/2023
 ---
 - Adds example files in spanish and english - 31/05/2023
+- Adds mathematical development of *dc* value in example file - 31/05/2023
