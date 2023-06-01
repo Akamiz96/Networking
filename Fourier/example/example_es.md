@@ -125,7 +125,16 @@ Se puede reestructurar la ecuación `11` como:
 
 $$
 \begin{align}
-a_n = - \frac{0.25}{0.25 * \pi} * cos(0.25 \pi  t)|^8_0 \\
-a_n = - \frac{1}{\pi} * cos(0.25 \pi  t)|^8_0
+a_n = - \frac{0.25}{0.25 * \pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
+a_n = - \frac{1}{\pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
 \end{align}
+$$
+
+El siguiente paso requiere el realizar el reemplazo de los límites. En este proceso hay que entender que la función `g(t)` es una función a trozos. Por ende, el cálculo de $a_n$ sería: 
+
+$$
+a_n = - \frac{1}{\pi} * ( 0 * cos(0.25 \pi  t)|^1_0 ) + ( 1 * cos(0.25 \pi  t)|^2_1 ) 
++ ( 0 * cos(0.25 \pi  t)|^3_2 ) + ( 0 * cos(0.25 \pi  t)|^4_3 ) + \\
+( 0 * cos(0.25 \pi  t)|^5_4) + ( 1 * cos(0.25 \pi  t)|^6_5 ) + \\
+( 1 * cos(0.25 \pi  t)|^7_6 ) + ( 0 * cos(0.25 \pi  t)|^8_7 )\\
 $$

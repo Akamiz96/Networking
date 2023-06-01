@@ -125,7 +125,7 @@ Formula `11` can be restructured as:
 
 $$
 \begin{align}
-a_n = - \frac{0.25}{0.25 * \pi} * cos(0.25 \pi  t)|^8_0 \\
-a_n = - \frac{1}{\pi} * cos(0.25 \pi  t)|^8_0
+a_n = - \frac{0.25}{0.25 * \pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
+a_n = - \frac{1}{\pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
 \end{align}
 $$
