@@ -98,7 +98,7 @@ Being:
 - *T* the period of the signal to be transformed
 - *g(t)* the periodic function to be transformed
 
-#### Calculation of the coefficient *$C_n$*
+#### Calculation of the coefficient $C_n$
 
 $$
 \begin{align}
@@ -110,7 +110,7 @@ Being:
 - *a_n* one of the Fourier coefficients
 - *b_n* one of the Fourier coefficients
 
-#### Calculation of the coefficient *$\varphi_n$*
+#### Calculation of the coefficient $\varphi_n$
 
 $$
 \begin{align}
@@ -122,7 +122,7 @@ Being:
 - *a_n* one of the Fourier coefficients
 - *b_n* one of the Fourier coefficients
 
-##### Calculation of the coefficient *$a_n$*
+##### Calculation of the coefficient $a_n$
 
 $$
 \begin{align}
@@ -135,7 +135,7 @@ Being:
 - *f* indicates the frequency of the fundamental harmonic
 - *t* indicates time
 
-##### Calculation of the coefficient *$b_n$*
+##### Calculation of the coefficient $b_n$
 
 $$
 \begin{align}

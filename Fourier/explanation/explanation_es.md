@@ -99,7 +99,7 @@ Siendo:
 - *T* el periodo de la señal que se quiere transformar
 - *g(t)* la función periódica que se quiere transformar
 
-#### Cálculo del coeficiente *$C_n$*
+#### Cálculo del coeficiente $C_n$
 
 $$
 \begin{align}
@@ -111,7 +111,7 @@ Siendo:
 - *a_n* uno de los coeficientes de Fourier
 - *b_n* uno de los coeficientes de Fourier
 
-#### Cálculo del coeficiente *$\varphi_n$*
+#### Cálculo del coeficiente $\varphi_n$
 
 $$
 \begin{align}
@@ -123,7 +123,7 @@ Siendo:
 - *a_n* uno de los coeficientes de Fourier
 - *b_n* uno de los coeficientes de Fourier
 
-##### Cálculo del coeficiente *$a_n$*
+##### Cálculo del coeficiente $a_n$
 
 $$
 \begin{align}
@@ -136,7 +136,7 @@ Siendo:
 - *f* indica la frecuencia del armónico fundamental 
 - *t* indica el tiempo
 
-##### Cálculo del coeficiente *$b_n$*
+##### Cálculo del coeficiente $b_n$
 
 $$
 \begin{align}

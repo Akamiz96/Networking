@@ -4,7 +4,7 @@ It should be clarified that the method applied in this example is a step by step
 
 This method is designed to find the various harmonic components next to the forward voltage value of a sequence of bits.
 
-Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](Fourier/explanation/explanation_en.md)
+Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](/Fourier/explanation/explanation_en.md)
 
 ---
 
@@ -56,7 +56,7 @@ $$
 
 Now, the next step is to calculate the Fourier coefficients $a_n$ and $b_n$. This is because the coefficients $C_n$ and $\varphi_n$ depend on these two, as shown below.
 
-## Calculation of the coefficient *$C_n$*
+## Calculation of the coefficient $C_n$
 
 $$
 \begin{align}
@@ -68,7 +68,7 @@ Being:
 - *a_n* one of the Fourier coefficients
 - *b_n* one of the Fourier coefficients
 
-## Calculation of the coefficient *$\varphi_n$*
+## Calculation of the coefficient $\varphi_n$
 
 $$
 \begin{align}

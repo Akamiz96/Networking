@@ -4,7 +4,7 @@ Cabe aclarar que método aplicado en este ejemplo, es un paso a paso diseñado p
 
 Este método está diseñado para encontrar las distintas componentes armónicas junto al valor de voltaje directo de una secuencia de bits. 
 
-Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️](Fourier/explanation/explanation_es.md)
+Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️](/Fourier/explanation/explanation_es.md)
 
 ---
 
