@@ -43,7 +43,7 @@ En resumen, el área sería el resaltado a continuación:
 
 ![Example](/images/Fourier/ejemplo/Ejemplo_Fourier_Resaltado.png)
 
-En este ejemplo y con las codiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
+En este ejemplo y con las condiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
 
 $$
 \begin{align}
@@ -53,3 +53,29 @@ dc = 0.375
 $$
 
 ---
+
+Ahora, el siguiente paso radica en el cálculo de los coeficientes de Fourier $a_n$ y $b_n$. Esto ya que los coeficientes $C_n$ y $\varphi_n$ dependen de estos dos, como se muestra a continuación. 
+
+## Cálculo del coeficiente *$C_n$*
+
+$$
+\begin{align}
+C_n = \sqrt{a_n^2 + b_n^2} 
+\end{align}
+$$
+
+Siendo:
+- *a_n* uno de los coeficientes de Fourier
+- *b_n* uno de los coeficientes de Fourier
+
+## Cálculo del coeficiente *$\varphi_n$*
+
+$$
+\begin{align}
+\varphi_n = arctan (\frac {b_n} {a_n})
+\end{align}
+$$
+
+Siendo:
+- *a_n* uno de los coeficientes de Fourier
+- *b_n* uno de los coeficientes de Fourier

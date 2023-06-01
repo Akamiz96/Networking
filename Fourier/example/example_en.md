@@ -53,3 +53,29 @@ dc = 0.375
 $$
 
 ---
+
+Now, the next step is to calculate the Fourier coefficients $a_n$ and $b_n$. This is because the coefficients $C_n$ and $\varphi_n$ depend on these two, as shown below.
+
+## Calculation of the coefficient *$C_n$*
+
+$$
+\begin{align}
+C_n = \sqrt{a_n^2 + b_n^2} 
+\end{align}
+$$
+
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
+
+## Calculation of the coefficient *$\varphi_n$*
+
+$$
+\begin{align}
+\varphi_n = arctan (\frac {b_n} {a_n})
+\end{align}
+$$
+
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
