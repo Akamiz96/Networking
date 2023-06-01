@@ -29,9 +29,9 @@ dc = \frac {1} {8} * \int _ { 0 } ^ { 8 } g(t) dt
 \end{align}
 $$
 
-En la ecuacion `(1)` se presenta la forma de calcular el valor de la componente de voltaje directo. 
+En la primera ecuación ecuacion se presenta la forma de calcular el valor de la componente de voltaje directo. 
 
-En la ecuacion `(2)` se reemplaza el valor de `T` por *8* que es el periodo de la señal, asumiendo que cada bit tiene una duración de 1 segundo. 
+En la segunda ecuacion se reemplaza el valor de `T` por *8* que es el periodo de la señal, asumiendo que cada bit tiene una duración de 1 segundo. 
 
 Ahora bien, la integral $\int _ { 0 } ^ { 8 } g(t) dt$ se puede calcular a partir de la definición de una integral. 
 
@@ -89,7 +89,7 @@ $$
 \begin{align}
 a_n = \frac{2}{T} \int _ {0} ^ {T} g(t) sin(2 \pi n f t)dt \\
 a_n = \frac{2}{8} \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi n t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
 \end{align}
 $$
 
@@ -98,7 +98,7 @@ Siendo:
 - *f* indica la frecuencia del armónico fundamental 
 - *t* indica el tiempo
 
-En la ecuación `8` se reemplazan los valores de `T` y `f`, siendo estos, `8` (Periodo de la señal) y `0.125` ( $\frac{1}{T}$ )correspondientemente. 
+En la ecuación `2` del bloque anterior, se reemplazan los valores de `T` y `f`, siendo estos, `8` (Periodo de la señal) y `0.125` ( $\frac{1}{T}$ )correspondientemente. 
 
 A partir de este punto, se puede empezar a calcular el coeficiente $a_n$ para cada armónico (1,2,3,4,5,6,7...). Este ejemplo se realizará con 7 armónicos. 
 
@@ -106,12 +106,12 @@ A partir de este punto, se puede empezar a calcular el coeficiente $a_n$ para ca
 
 $$
 \begin{align}
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi * 1 * t)dt \\
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi  t)dt
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * 1 * t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * t)dt
 \end{align}
 $$
 
-Aquí se reemplaza la variable `n` por `1` que es el armónico que se quiere calcular. Con esto, se obtiene la ecuación `11` donde se puede calcular la integral. 
+Aquí se reemplaza la variable `n` por `1` que es el armónico que se quiere calcular. Con esto, se obtiene la segunda ecuación del bloque anterior donde se puede calcular la integral. 
 
 Teniendo en cuenta que: 
 
@@ -121,12 +121,12 @@ $$
 \end{align}
 $$
 
-Se puede reestructurar la ecuación `11` como: 
+Se puede reestructurar la ecuación de $a_n$ como: 
 
 $$
 \begin{align}
-a_n = - \frac{0.25}{0.25 * \pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
-a_n = - \frac{1}{\pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * t)dt \\
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * g(t) * cos(2 \pi * 0.125 * t)|^8_0 \\
 \end{align}
 $$
 
@@ -134,10 +134,57 @@ El siguiente paso requiere el realizar el reemplazo de los límites. En este pro
 
 $$
 \begin{align}
-a_n = - \frac{1}{\pi} * ( 0 * cos(0.25 \pi  t)|^1_0 ) + ( 1 * cos(0.25 \pi  t)|^2_1 ) + \\
-( 0 * cos(0.25 \pi  t)|^3_2 ) + ( 0 * cos(0.25 \pi  t)|^4_3 ) + \\
-( 0 * cos(0.25 \pi  t)|^5_4) + ( 1 * cos(0.25 \pi  t)|^6_5 ) + \\
-( 1 * cos(0.25 \pi  t)|^7_6 ) + ( 0 * cos(0.25 \pi  t)|^8_7 ) \\
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^2_1 ) + ( 0 * cos(2 \pi * 0.125 * t)|^3_2 ) + \\
+( 0 * cos(2 \pi * 0.125 * t)|^4_3 ) + ( 0 * cos(2 \pi * 0.125 * t)|^5_4) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^6_5 ) + ( 1 * cos(2 \pi * 0.125 * t)|^7_6 ) + \\
+( 0 * cos(2 \pi * 0.125 * t)|^8_7 )) \\
 \end{align}
 $$
 
+![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+
+Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
+
+Reduciendo los términos que se vean multiplicados por `0`, la ecuación que determina el coeficiente $a_n$ sería: 
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 1 * cos(2 \pi * 0.125 * t)|^2_1 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^6_5 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^7_6 )) \\
+\end{align}
+$$
+
+Ahora, el siguiente paso es el cálculo de los límites de cada uno de los cosenos de la siguiente forma (se eliminan los `1` para que la fórmula sea más simple de escribir): 
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( cos(2 \pi * 0.125 * 2) - cos(2 \pi * 0.125 * 1) ) + \\
+( cos(2 \pi * 0.125 * 6) - cos(2 \pi * 0.125 * 5) ) + \\
+( cos(2 \pi * 0.125 * 7) - cos(2 \pi * 0.125 * 6) )) \\
+\end{align}
+$$
+
+Resolviendo cada uno de las funciones cosenos: 
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0.0000 - 0.7071 ) + \\
+( 0.0000 - (-0.7071) ) + \\
+( 0.7071 - 0.0000 )) \\
+\end{align}
+$$
+
+Simplificando: 
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (-0.7071 + 0.7071 + 0.7071 ) \\
+a_n = - \frac{-1}{\pi} * (-0.7071 + 0.7071 + 0.7071 ) \\
+a_n = - \frac{-1}{\pi} * ( 0.7071 ) \\
+a_n = - 0.2250 \\
+\end{align}
+$$
+
+Este sería el coeficiente $a_n$ para el armónico `1`.

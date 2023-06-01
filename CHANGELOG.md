@@ -17,3 +17,4 @@
 - Adds mathematical introduction of $a_n$ y $b_n$ coefficients in example file - 31/05/2023
 ---
 - Adds simple equation to calculate $a_n$ - 01/06/2023
+- Completes the calculation of $a_n$ for the first harmonic - 01/06/2023

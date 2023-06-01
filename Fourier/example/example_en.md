@@ -29,9 +29,9 @@ dc = \frac {1} {8} * \int _ { 0 } ^ { 8 } g(t) dt
 \end{align}
 $$
 
-In equation `(1)` the way to calculate the value of the direct voltage component is presented.
+In the first equation the way to calculate the value of the direct voltage component is presented.
 
-In equation `(2)` the value of `T` is replaced by *8*, which is the period of the signal, assuming that each bit has a duration of 1 second.
+In the second equation the value of `T` is replaced by *8*, which is the period of the signal, assuming that each bit has a duration of 1 second.
 
 Now, the integral $\int _ { 0 } ^ { 8 } g(t) dt$ can be calculated from the definition of an integral.
 
@@ -87,9 +87,9 @@ Starting with $a_n$:
 
 $$
 \begin{align}
-a_n = \frac{2}{T} \int _ {0} ^{T} g(t) sin(2 \pi n f t)dt \\
-a_n = \frac{2}{8} \int _ {0} ^{8} g(t) sin(2 \pi * 0.125 * n t)dt \\
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi n t)dt \\
+a_n = \frac{2}{T} \int _ {0} ^ {T} g(t) sin(2 \pi n f t)dt \\
+a_n = \frac{2}{8} \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
 \end{align}
 $$
 
@@ -98,7 +98,7 @@ Being:
 - *f* indicates the frequency of the fundamental harmonic
 - *t* indicates time
 
-In the formula `8` the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
+In the formula `2` of the previous block the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
 
 From this point, you can start calculating the coefficient $a_n$ for each harmonic (1,2,3,4,5,6,7...). This example is done with 7 harmonics.
 
@@ -106,8 +106,8 @@ From this point, you can start calculating the coefficient $a_n$ for each harmon
 
 $$
 \begin{align}
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi * 1 * t)dt \\
-a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi t)dt
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * 1 * t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * t)dt
 \end{align}
 $$
 
@@ -125,7 +125,66 @@ Formula `11` can be restructured as:
 
 $$
 \begin{align}
-a_n = - \frac{0.25}{0.25 * \pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
-a_n = - \frac{1}{\pi} * g(t) * cos(0.25 \pi  t)|^8_0 \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * t)dt \\
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * g(t) * cos(2 \pi * 0.125 * t)|^8_0 \\
 \end{align}
 $$
+
+The next step requires performing the boundary replacement. In this process we must understand that the function `g(t)` is a piecewise function. Finally, the calculation of $a_n$ would be:
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^2_1 ) + ( 0 * cos(2 \pi * 0.125 * t)|^3_2 ) + \\
+( 0 * cos(2 \pi * 0.125 * t)|^4_3 ) + ( 0 * cos(2 \pi * 0.125 * t)|^5_4) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^6_5 ) + ( 1 * cos(2 \pi * 0.125 * t)|^7_6 ) + \\
+( 0 * cos(2 \pi * 0.125 * t)|^8_7 )) \\
+\end{align}
+$$
+
+![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+
+Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
+
+Reducing the terms that are multiplied by `0`, the equation that determines the coefficient $a_n$ would be:
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 1 * cos(2 \pi * 0.125 * t)|^2_1 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^6_5 ) + \\
+( 1 * cos(2 \pi * 0.125 * t)|^7_6 )) \\
+\end{align}
+$$
+
+Now, the next step is to calculate the limits of each of the cosines as follows (the `1` are removed to make the formula easier to write):
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( cos(2 \pi * 0.125 * 2) - cos(2 \pi * 0.125 * 1) ) + \\
+( cos(2 \pi * 0.125 * 6) - cos(2 \pi * 0.125 * 5) ) + \\
+( cos(2 \pi * 0.125 * 7) - cos(2 \pi * 0.125 * 6) )) \\
+\end{align}
+$$
+
+Solving each of the cosine functions:
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0.0000 - 0.7071 ) + \\
+( 0.0000 - (-0.7071) ) + \\
+( 0.7071 - 0.0000 )) \\
+\end{align}
+$$
+
+Simplifying:
+
+$$
+\begin{align}
+a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (-0.7071 + 0.7071 + 0.7071 ) \\
+a_n = - \frac{-1}{\pi} * (-0.7071 + 0.7071 + 0.7071 ) \\
+a_n = - \frac{-1}{\pi} * ( 0.7071 ) \\
+a_n = - 0.2250 \\
+\end{align}
+$$
+
+This would be the coefficient $a_n$ for the `1` harmonic.
