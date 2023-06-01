@@ -79,3 +79,53 @@ $$
 Being:
 - *a_n* one of the Fourier coefficients
 - *b_n* one of the Fourier coefficients
+
+---
+Starting with $a_n$:
+
+## Calculation of the coefficient $a_n$
+
+$$
+\begin{align}
+a_n = \frac{2}{T} \int _ {0} ^{T} g(t) sin(2 \pi n f t)dt \\
+a_n = \frac{2}{8} \int _ {0} ^{8} g(t) sin(2 \pi * 0.125 * n t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi n t)dt \\
+\end{align}
+$$
+
+Being:
+- *T* the period of the signal to be transformed
+- *f* indicates the frequency of the fundamental harmonic
+- *t* indicates time
+
+In the formula `8` the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
+
+From this point, you can start calculating the coefficient $a_n$ for each harmonic (1,2,3,4,5,6,7...). This example is done with 7 harmonics.
+
+### For the 1st harmonic
+
+$$
+\begin{align}
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi * 1 * t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi t)dt
+\end{align}
+$$
+
+Here the variable `n` is replaced by `1`, which is the harmonic to be calculated. With this, the equation `11` is obtained where the integral can be calculated.
+
+Taking into account that:
+
+$$
+\begin{align}
+\int sin(x)dx = - cos(x) + C
+\end{align}
+$$
+
+Formula `11` can be restructured as: 
+
+$$
+\begin{align}
+a_n = - \frac{0.25}{0.25 * \pi} * cos(0.25 \pi  t)|^8_0 \\
+a_n = - \frac{1}{\pi} * cos(0.25 \pi  t)|^8_0
+\end{align}
+$$

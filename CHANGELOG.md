@@ -15,3 +15,5 @@
 - Adds example files in spanish and english - 31/05/2023
 - Adds mathematical development of *dc* value in example file - 31/05/2023
 - Adds mathematical introduction of $a_n$ y $b_n$ coefficients in example file - 31/05/2023
+---
+- Adds simple equation to calculate $a_n$ - 01/06/2023

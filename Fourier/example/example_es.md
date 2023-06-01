@@ -56,7 +56,7 @@ $$
 
 Ahora, el siguiente paso radica en el cálculo de los coeficientes de Fourier $a_n$ y $b_n$. Esto ya que los coeficientes $C_n$ y $\varphi_n$ dependen de estos dos, como se muestra a continuación. 
 
-## Cálculo del coeficiente *$C_n$*
+## Cálculo del coeficiente $C_n$
 
 $$
 \begin{align}
@@ -68,7 +68,7 @@ Siendo:
 - *a_n* uno de los coeficientes de Fourier
 - *b_n* uno de los coeficientes de Fourier
 
-## Cálculo del coeficiente *$\varphi_n$*
+## Cálculo del coeficiente $\varphi_n$
 
 $$
 \begin{align}
@@ -79,3 +79,53 @@ $$
 Siendo:
 - *a_n* uno de los coeficientes de Fourier
 - *b_n* uno de los coeficientes de Fourier
+
+---
+Empezando con $a_n$: 
+
+## Cálculo del coeficiente $a_n$
+
+$$
+\begin{align}
+a_n = \frac{2}{T} \int _ {0} ^ {T} g(t) sin(2 \pi n f t)dt \\
+a_n = \frac{2}{8} \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi n t)dt \\
+\end{align}
+$$
+
+Siendo:
+- *T* el periodo de la señal que se quiere transformar
+- *f* indica la frecuencia del armónico fundamental 
+- *t* indica el tiempo
+
+En la ecuación `8` se reemplazan los valores de `T` y `f`, siendo estos, `8` (Periodo de la señal) y `0.125` ( $\frac{1}{T}$ )correspondientemente. 
+
+A partir de este punto, se puede empezar a calcular el coeficiente $a_n$ para cada armónico (1,2,3,4,5,6,7...). Este ejemplo se realizará con 7 armónicos. 
+
+### Para el armónico 1
+
+$$
+\begin{align}
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi * 1 * t)dt \\
+a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(0.25 \pi  t)dt
+\end{align}
+$$
+
+Aquí se reemplaza la variable `n` por `1` que es el armónico que se quiere calcular. Con esto, se obtiene la ecuación `11` donde se puede calcular la integral. 
+
+Teniendo en cuenta que: 
+
+$$
+\begin{align}
+\int sin(x)dx = - cos(x) + C
+\end{align}
+$$
+
+Se puede reestructurar la ecuación `11` como: 
+
+$$
+\begin{align}
+a_n = - \frac{0.25}{0.25 * \pi} * cos(0.25 \pi  t)|^8_0 \\
+a_n = - \frac{1}{\pi} * cos(0.25 \pi  t)|^8_0
+\end{align}
+$$

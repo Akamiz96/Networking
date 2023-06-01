@@ -127,7 +127,7 @@ Siendo:
 
 $$
 \begin{align}
-a_n = \frac{2}{T} \int _ {0} ^ {T} g(t) sin(2 \pi f t)dt
+a_n = \frac{2}{T} \int _ {0} ^ {T} g(t) sin(2 \pi n f t)dt
 \end{align}
 $$
 
@@ -140,7 +140,7 @@ Siendo:
 
 $$
 \begin{align}
-b_n = \frac{2}{T} \int _ {0} ^ {T} g(t) cos(2 \pi f t)dt
+b_n = \frac{2}{T} \int _ {0} ^ {T} g(t) cos(2 \pi n f t)dt
 \end{align}
 $$
 
