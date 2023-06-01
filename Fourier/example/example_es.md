@@ -46,10 +46,10 @@ En resumen, el área sería el resaltado a continuación:
 En este ejemplo y con las condiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
 
 $$
-\begin{align}
+\begin{equation}
 dc = \frac {1} {8} * 3 \\
 dc = 0.375
-\end{align}
+\end{equation}
 $$
 
 ---
@@ -133,8 +133,10 @@ $$
 El siguiente paso requiere el realizar el reemplazo de los límites. En este proceso hay que entender que la función `g(t)` es una función a trozos. Por ende, el cálculo de $a_n$ sería: 
 
 $$
+\begin{equation}
 a_n = - \frac{1}{\pi} * ( 0 * cos(0.25 \pi  t)|^1_0 ) + ( 1 * cos(0.25 \pi  t)|^2_1 ) 
 + ( 0 * cos(0.25 \pi  t)|^3_2 ) + ( 0 * cos(0.25 \pi  t)|^4_3 ) + \\
 ( 0 * cos(0.25 \pi  t)|^5_4) + ( 1 * cos(0.25 \pi  t)|^6_5 ) + \\
 ( 1 * cos(0.25 \pi  t)|^7_6 ) + ( 0 * cos(0.25 \pi  t)|^8_7 )\\
+\end{equation}
 $$
