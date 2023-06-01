@@ -188,3 +188,119 @@ a_n = - 0.2250 \\
 $$
 
 This would be the coefficient $a_n$ for the `1` harmonic.
+
+This process has to be repeated for each of the harmonics with which you want to work.
+
+---
+
+Continuing with $b_n$:
+
+## Cálculo del coeficiente $b_n$
+
+$$
+\begin{align}
+b_n = \frac{2}{T} \int _ {0} ^ {T} g(t) cos(2 \pi n f t)dt \\
+b_n = \frac{2}{8} \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * n t)dt \\
+b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * n t)dt \\
+\end{align}
+$$
+
+Being:
+- *T* the period of the signal to be transformed
+- *f* indicates the frequency of the fundamental harmonic
+- *t* indicates time
+
+In the equation `2` of the previous block, the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
+
+From this point, you can start calculating the coefficient $b_n$ for each harmonic (1,2,3,4,5,6,7...). This example will be done with 7 harmonics.
+
+### For the 1st harmonic
+
+$$
+\begin{align}
+b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * 1 * t)dt \\
+b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * t)dt
+\end{align}
+$$
+
+Here the variable `n` is replaced by `1`, which is the harmonic to be calculated. With this, the second equation of the previous block is obtained where the integral can be calculated.
+
+Taking into account that:
+
+$$
+\begin{align}
+\int cos(x)dx = sin(x) + C
+\end{align}
+$$
+
+The equation of $b_n$ can be restructured as:
+
+$$
+\begin{align}
+b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * t)dt \\
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * g(t) * sin(2 \pi * 0.125 * t)|^8_0 \\
+\end{align}
+$$
+
+The next step requires performing the boundary replacement. In this process we must understand that the function `g(t)` is a piecewise function. Therefore, the calculation of $a_n$ would be:
+
+$$
+\begin{align}
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 0 * sin(2 \pi * 0.125 * t)|^1_0 ) + \\
+( 1 * sin(2 \pi * 0.125 * t)|^2_1 ) + ( 0 * sin(2 \pi * 0.125 * t)|^3_2 ) + \\
+( 0 * sin(2 \pi * 0.125 * t)|^4_3 ) + ( 0 * sin(2 \pi * 0.125 * t)|^5_4) + \\
+( 1 * sin(2 \pi * 0.125 * t)|^6_5 ) + ( 1 * sin(2 \pi * 0.125 * t)|^7_6 ) + \\
+( 0 * sin(2 \pi * 0.125 * t)|^8_7 )) \\
+\end{align}
+$$
+
+![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+
+Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
+
+Reducing the terms that are multiplied by `0`, the equation that determines the coefficient $a_n$ would be:
+
+$$
+\begin{align}
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 1 * sin(2 \pi * 0.125 * t)|^2_1 ) + \\
+( 1 * sin(2 \pi * 0.125 * t)|^6_5 ) + \\
+( 1 * sin(2 \pi * 0.125 * t)|^7_6 )) \\
+\end{align}
+$$
+
+Now, the next step is to calculate the limits of each of the cosines as follows (the `1` are removed to make the formula easier to write):
+
+$$
+\begin{align}
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( sin(2 \pi * 0.125 * 2) - sin(2 \pi * 0.125 * 1) ) + \\
+( sin(2 \pi * 0.125 * 6) - sin(2 \pi * 0.125 * 5) ) + \\
+( sin(2 \pi * 0.125 * 7) - sin(2 \pi * 0.125 * 6) )) \\
+\end{align}
+$$
+
+Solving each of the cosine functions:
+
+$$
+\begin{align}
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 1.0000 - 0.7071 ) + \\
+( -1.0000 - (-0.7071) ) + \\
+( -0.7071 - (-1.0000) )) \\
+\end{align}
+$$
+
+Simplifying:
+
+$$
+\begin{align}
+b_n = 0.25 * \frac{1}{2 \pi * 0.125} * ( 0.2929 - 0.2929 + 0.2929 ) \\
+b_n = - \frac{1}{\pi} * ( 0.2929 - 0.2929 + 0.2929 ) \\
+b_n = - \frac{1}{\pi} * ( 0.2929 ) \\
+b_n = 0.0932 \\
+\end{align}
+$$
+
+This would be the coefficient $b_n$ for the `1` harmonic.
+
+This process has to be repeated for each of the harmonics with which you want to work.
+
+---
