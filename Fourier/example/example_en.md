@@ -394,7 +394,7 @@ Being:
 
 From this equation we already have the following calculated values:
 - *dc* - [Calculation of dc value](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_en.md#calculation-of-dc-value)
-- $C_n$ - [Calculation of the coefficient $C_n$](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_en.md#calculation-of-the-coefficient-c_n)
+- $C_n$ - [Calculation of the coefficient](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_en.md#calculation-of-the-coefficient-c_n)
 - n - Depends on which harmonic is being calculated it will change between the values ​​1, 2, 3, 4, 5, 6, 7, ...
 - *f* - It was calculated that, for this example, the fundamental frequency is: `0.125 Hz`, which is related to the equation:
 
@@ -402,7 +402,7 @@ $$
 f = \frac {1} {T} 
 $$
 
-- $\varphi_n$ - [Calculation of the coefficient $\varphi_n$](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_en.md#calculation-of-the-coefficient-varphi_n)
+- $\varphi_n$ - [Calculation of the coefficient](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_en.md#calculation-of-the-coefficient-varphi_n)
 
 The only value that is missing within the equation is that of time ( *t* ). This is simply the time series on which each point of the different sine functions will be calculated for its graphing.
 
