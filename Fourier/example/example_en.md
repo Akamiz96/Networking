@@ -520,3 +520,24 @@ Each one is shown below starting with the value *dc*.
 
 ## Sum of harmonics
 
+However, to generate the desired signal, each of the harmonics must be added (including the *dc* value).
+
+The following images show the different sums; starting only with the value *dc* and continuing with the sum of one in one of the different harmonics.
+
+![Example](/images/Fourier/example/signal/DC.png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t)%2Bg6(t).png)
+
+![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+
+---

@@ -524,6 +524,26 @@ A continuación se muestran cada una empezando por el valor *dc*.
 
 ## Suma de armónicos
 
+Ahora bien, para generar la señal deseada, se deben sumar cada uno de los armónicos (incluyendo el valor *dc*). 
+
+En las siguientes imágenes se observan las distintas sumas; empezando solo por el valor *dc* y continuando con la suma de uno en uno de los distintos armónicos. 
+
+![Example](/images/Fourier/example/signal/DC.png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t).png)
+
+![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t)%2Bg6(t).png)
+
+![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+
 ---
 
 Generacion se;al completa 
