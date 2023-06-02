@@ -1,3 +1,5 @@
+![Welcome](/images/Fourier/example/Example_banner.jpg)
+
 # Example of application of Fourier's Theorem
 
 It should be clarified that the method applied in this example is a step by step designed for engineers as this is their first approach to Fourier and the mathematics behind it.
