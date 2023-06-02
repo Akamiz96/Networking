@@ -10,7 +10,7 @@ Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](/F
 
 For this example, the signal presented below will be used.
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 This signal has a logic `1` voltage of 1 volt and a logic `0` voltage of 0 volts.
 
@@ -41,7 +41,7 @@ Taking this into account, the integral $\int _ { 0 } ^ { 8 } g(t) dt$ reduces to
 
 In short, the area would be highlighted below:
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier_Resaltado.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier_Resaltado.png)
 
 In this example and with the proposed conditions (Period = 8 seconds), the highlighted area is `3`. Therefore, the equation would be:
 
@@ -142,7 +142,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \
 \end{align}
 $$
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
@@ -254,7 +254,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 0 * sin(2 \pi * 0.125 * t)|^1_0 ) + \\
 \end{align}
 $$
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
@@ -491,3 +491,32 @@ The following table lists the value at different times *t* for each of the 8 har
 | **7,8** | 0,375     | 0,127293107  | -0,503277619 | -0,195448959 | 0,093548928  | 0,045015816  | 0,050629244  | 0,022603004  |
 | **7,9** | 0,375     | 0,110602909  | -0,496483763 | -0,193639584 | 0,049181582  | 0,083178382  | 0,117723149  | 0,005444452  |
 | **8**   | 0,375     | 0,093230807  | -0,477464829 | -0,181129655 | 6,35624E-15  | 0,108677793  | 0,159154943  | -0,013318687 |
+
+---
+
+## Display of harmonics
+
+With this table already completed, each of the harmonic components of the signal can be visualized.
+
+Each one is shown below starting with the value *dc*.
+
+![Example](/images/Fourier/example/signal/DC.png)
+
+![Example](/images/Fourier/example/signal/g1(t).png)
+
+![Example](/images/Fourier/example/signal/g2(t).png)
+
+![Example](/images/Fourier/example/signal/g3(t).png)
+
+![Example](/images/Fourier/example/signal/g4(t).png)
+
+![Example](/images/Fourier/example/signal/g5(t).png)
+
+![Example](/images/Fourier/example/signal/g6(t).png)
+
+![Example](/images/Fourier/example/signal/g7(t).png)
+
+---
+
+## Sum of harmonics
+

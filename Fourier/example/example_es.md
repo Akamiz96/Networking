@@ -10,7 +10,7 @@ Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️
 
 Para este ejemplo, se usará la señal presentada a continuación. 
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 Esta señal cuenta con un voltaje de `1` lógico de 1 voltio y un voltaje de `0` lógico de 0 voltios. 
 
@@ -41,7 +41,7 @@ Teniendo en cuenta esto, la integral $\int _ { 0 } ^ { 8 } g(t) dt$ se reduce a 
 
 En resumen, el área sería el resaltado a continuación: 
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier_Resaltado.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier_Resaltado.png)
 
 En este ejemplo y con las condiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
 
@@ -142,7 +142,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \
 \end{align}
 $$
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
 
@@ -495,9 +495,34 @@ En la siguiente tabla se enuncia el valor en diferentes tiempos *t* para cada un
 | **8**   | 0,375     | 0,093230807  | -0,477464829 | -0,181129655 | 6,35624E-15  | 0,108677793  | 0,159154943  | -0,013318687 |
 
 
---- 
+---
 
-Suma de armónicos
+## Visualización de los armónicos
+
+Con esta tabla ya completada se pueden visualizar cada una de las componentes armónicas de la señal. 
+
+A continuación se muestran cada una empezando por el valor *dc*. 
+
+![Example](/images/Fourier/example/signal/DC.png)
+
+![Example](/images/Fourier/example/signal/g1(t).png)
+
+![Example](/images/Fourier/example/signal/g2(t).png)
+
+![Example](/images/Fourier/example/signal/g3(t).png)
+
+![Example](/images/Fourier/example/signal/g4(t).png)
+
+![Example](/images/Fourier/example/signal/g5(t).png)
+
+![Example](/images/Fourier/example/signal/g6(t).png)
+
+![Example](/images/Fourier/example/signal/g7(t).png)
+
+
+---
+
+## Suma de armónicos
 
 ---
 
