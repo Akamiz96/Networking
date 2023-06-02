@@ -348,7 +348,31 @@ Siguiendo la ecuación anterior, la tabla se complementaría con una columna adi
 
 --- 
 
-Explicacion de On
+## Cálculo del coeficiente $\varphi_n$
+
+Para calcular el coeficiente $\varphi_n$ a partir de los coeficientes $a_n$ y $b_n$ solo se debe seguir la siguiente fórmula: 
+
+$$
+\begin{align}
+\varphi_n = arctan (\frac {b_n} {a_n})
+\end{align}
+$$
+
+Siendo:
+- *a_n* uno de los coeficientes de Fourier
+- *b_n* uno de los coeficientes de Fourier
+
+Siguiendo la ecuación anterior, la tabla se complementaría con una columna adicional de la siguiente forma: 
+
+| **Armónicos n** | **$a\_n$**    | **$b\_n$**     | **$C\_n$**  | **$\\varphi\_n$** |
+|:---------------:|:-------------:|:--------------:|:-----------:|:-----------------:|
+| **1**           | \-0,225079079 | 0,093230807    | 0,24362384  | 2,748893572       |
+| **2**           | 0,159154943   | \-0,477464829  | 0,503292121 | \-1,249045772     |
+| **3**           | 0,07502636    | \-0,181129655  | 0,196053326 | \-1,178097245     |
+| **4**           | \-0,159154943 | \-9,74942E\-18 | 0,159154943 | \-3,141592654     |
+| **5**           | 0,045015816   | 0,108677793    | 0,117631996 | 1,178097245       |
+| **6**           | 0,053051648   | 0,159154943    | 0,16776404  | 1,249045772       |
+| **7**           | \-0,032154154 | \-0,013318687  | 0,034803406 | \-2,748893572     |
 
 ---
 
