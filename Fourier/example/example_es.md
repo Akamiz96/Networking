@@ -546,6 +546,14 @@ En las siguientes imágenes se observan las distintas sumas; empezando solo por 
 
 ---
 
-Generacion se;al completa 
+## Comparación con la señal inicial
+
+Ahora bien, la última imagen presentada se relaciona con la señal inicial con la que parte el ejemplo. 
+
+Si analizamos ambas imágenes conjutamente, nos damos cuenta de que los picos de la señal continua se encuentran correlacionados con los niveles altos de la señal. 
+
+![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
 
 ---

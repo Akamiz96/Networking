@@ -541,3 +541,15 @@ The following images show the different sums; starting only with the value *dc* 
 ![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
 
 ---
+
+## Comparison with initial signal
+
+Now, the last image presented is related to the initial signal with which the example starts.
+
+If we analyze both images together, we realize that the peaks of the continuous signal are correlated with the high levels of the signal.
+
+![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+
+![Example](/images/Fourier/example/Ejemplo_Fourier.png)
+
+---

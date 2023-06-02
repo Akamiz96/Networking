@@ -25,3 +25,4 @@
 - Adds the calculation of harmonics and table of values - 02/06/2023
 - Adds images of each one of the harmonics - 02/06/2023
 - Adds images of each one of the sum of harmonics one by one - 02/06/2023
+- Adds comparison parragraph between Fourier and original signal - 02/06/2023
