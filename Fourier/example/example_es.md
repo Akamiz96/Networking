@@ -396,7 +396,7 @@ Siendo:
 
 De esta ecuación ya contamos con los siguientes valores calculados: 
 - *dc* - [Cálculo del valor dc](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-valor-dc)
-- $C_n$ - [Cálculo del coeficiente $C_n$](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-c_n-1)
+- $C_n$ - [ Cálculo del coeficiente \$C_n\$ ](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-c_n-1)
 - n - Depende cuál armónico se está calculando cambiará entre los valores 1, 2, 3, 4, 5, 6, 7, ...
 - *f* - Se calculó que, para este ejemplo la frecuencia fundamental es: `0.125 Hz`, la cual se encuentra relacionada con la ecuación:
 
@@ -404,7 +404,7 @@ $$
 f = \frac {1} {T} 
 $$
 
-- $\varphi_n$ - [Cálculo del coeficiente $\varphi_n$](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-varphi_n)
+- $\varphi_n$ - [ Cálculo del coeficiente \$\varphi_n\$ ](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-varphi_n)
 
 El único valor que hace falta dentro de la ecuación es el del tiempo ( *t* ). Este simplemente es la serie de tiempo sobre la cual se calculará cada punto de las distintas funciones seno para su graficación. 
 
