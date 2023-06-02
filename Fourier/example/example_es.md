@@ -304,3 +304,62 @@ Este sería el coeficiente $b_n$ para el armónico `1`.
 Este proceso tiene que ser repetido para cada uno de los armónicos con los que se quiera trabajar. 
 
 ---
+
+Al repetir este proceso con cada uno de los siete armónicos que se deseen utilizar se obtienen los siguientes coeficientes: 
+
+| **Armónicos n** | **$a_n$**     | **$b_n$**      |
+|:---------------:|:-------------:|:--------------:|
+| **1**           | \-0,225079079 | 0,093230807    |
+| **2**           | 0,159154943   | \-0,477464829  |
+| **3**           | 0,07502636    | \-0,181129655  |
+| **4**           | \-0,159154943 | \-9,74942E\-18 |
+| **5**           | 0,045015816   | 0,108677793    |
+| **6**           | 0,053051648   | 0,159154943    |
+| **7**           | \-0,032154154 | \-0,013318687  |
+
+---
+
+## Cálculo del coeficiente $C_n$
+
+Para calcular el coeficiente $C_n$ a partir de los coeficientes $a_n$ y $b_n$ solo se debe seguir la siguiente fórmula: 
+
+$$
+\begin{align}
+C_n = \sqrt{a_n^2 + b_n^2} 
+\end{align}
+$$
+
+Siendo:
+- *a_n* uno de los coeficientes de Fourier
+- *b_n* uno de los coeficientes de Fourier
+
+Siguiendo la ecuación anterior, la tabla se complementaría con una columna adicional de la siguiente forma: 
+
+| **Armónicos n** | **$a_n$**     | **$b_n$**      | **$C_n$**   |
+|:---------------:|:-------------:|:--------------:|:-----------:|
+| **1**           | \-0,225079079 | 0,093230807    | 0,24362384  |
+| **2**           | 0,159154943   | \-0,477464829  | 0,503292121 |
+| **3**           | 0,07502636    | \-0,181129655  | 0,196053326 |
+| **4**           | \-0,159154943 | \-9,74942E\-18 | 0,159154943 |
+| **5**           | 0,045015816   | 0,108677793    | 0,117631996 |
+| **6**           | 0,053051648   | 0,159154943    | 0,16776404  |
+| **7**           | \-0,032154154 | \-0,013318687  | 0,034803406 |
+
+
+--- 
+
+Explicacion de On
+
+---
+
+Calculo de los armónicos
+
+--- 
+
+Suma de armónicos
+
+---
+
+Generacion se;al completa 
+
+---

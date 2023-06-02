@@ -304,3 +304,43 @@ This would be the coefficient $b_n$ for the `1` harmonic.
 This process has to be repeated for each of the harmonics with which you want to work.
 
 ---
+
+By repeating this process with each of the seven harmonics to be used, the following coefficients are obtained:
+
+| **Harmonics n** | **$a_n$**     | **$b_n$**      |
+|:---------------:|:-------------:|:--------------:|
+| **1**           | \-0,225079079 | 0,093230807    |
+| **2**           | 0,159154943   | \-0,477464829  |
+| **3**           | 0,07502636    | \-0,181129655  |
+| **4**           | \-0,159154943 | \-9,74942E\-18 |
+| **5**           | 0,045015816   | 0,108677793    |
+| **6**           | 0,053051648   | 0,159154943    |
+| **7**           | \-0,032154154 | \-0,013318687  |
+
+---
+
+## Calculation of the coefficient $C_n$
+
+To calculate the coefficient $C_n$ from the coefficients $a_n$ and $b_n$, just follow the following formula:
+
+$$
+\begin{align}
+C_n = \sqrt{a_n^2 + b_n^2} 
+\end{align}
+$$
+
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
+
+Following the previous equation, the table would be complemented with an additional column as follows:
+
+| **Harmonics n** | **$a_n$**     | **$b_n$**      | **$C_n$**   |
+|:---------------:|:-------------:|:--------------:|:-----------:|
+| **1**           | \-0,225079079 | 0,093230807    | 0,24362384  |
+| **2**           | 0,159154943   | \-0,477464829  | 0,503292121 |
+| **3**           | 0,07502636    | \-0,181129655  | 0,196053326 |
+| **4**           | \-0,159154943 | \-9,74942E\-18 | 0,159154943 |
+| **5**           | 0,045015816   | 0,108677793    | 0,117631996 |
+| **6**           | 0,053051648   | 0,159154943    | 0,16776404  |
+| **7**           | \-0,032154154 | \-0,013318687  | 0,034803406 |

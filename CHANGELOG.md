@@ -19,3 +19,5 @@
 - Adds simple equation to calculate $a_n$ - 01/06/2023
 - Completes the calculation of $a_n$ for the first harmonic - 01/06/2023
 - Completes the calculation of $b_n$ for the first harmonic - 01/06/2023
+---
+- Adds the calculation of $C_n$ - 02/06/2023
