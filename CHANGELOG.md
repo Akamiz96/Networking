@@ -22,3 +22,4 @@
 ---
 - Adds the calculation of $C_n$ - 02/06/2023
 - Adds the calculation of $\varphi_n$ - 02/06/2023
+- Adds the calculation of harmonics and table of values - 02/06/2023
