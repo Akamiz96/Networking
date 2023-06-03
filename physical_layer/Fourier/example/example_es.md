@@ -1,4 +1,4 @@
-![Welcome](/images/physical_layer/Fourier/example/Example_banner.jpg)
+![Welcome](/images/physical_layer/Fourier/example/example_banner.jpg)
 
 # Ejemplo de aplicación del Teorema de Fourier 
 
@@ -6,7 +6,7 @@ Cabe aclarar que método aplicado en este ejemplo, es un paso a paso diseñado p
 
 Este método está diseñado para encontrar las distintas componentes armónicas junto al valor de voltaje directo de una secuencia de bits. 
 
-Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️](/Fourier/explanation/explanation_es.md)
+Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️](/physical_layer/Fourier/explanation/explanation_es.md)
 
 ---
 
@@ -43,7 +43,7 @@ Teniendo en cuenta esto, la integral $\int _ { 0 } ^ { 8 } g(t) dt$ se reduce a 
 
 En resumen, el área sería el resaltado a continuación: 
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier_Resaltado.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier_highlighted.png)
 
 En este ejemplo y con las condiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
 
@@ -144,7 +144,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \
 \end{align}
 $$
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
 
@@ -256,7 +256,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 0 * sin(2 \pi * 0.125 * t)|^1_0 ) + \\
 \end{align}
 $$
 
-![Example](/images/physical_layer/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
 
@@ -556,6 +556,6 @@ Si analizamos ambas imágenes conjutamente, nos damos cuenta de que los picos de
 
 ![Example](/images/physical_layer/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 ---

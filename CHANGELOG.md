@@ -30,3 +30,4 @@
 - Adds references for example and exercise pages in `README.md` file - 02/06/2023
 ---
 - Restructuring repository organization - 03/06/2023
+- Change image's names and renaming them in files - 03/06/2023

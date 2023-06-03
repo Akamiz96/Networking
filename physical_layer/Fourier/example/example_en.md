@@ -1,4 +1,4 @@
-![Welcome](/images/physical_layer/Fourier/example/Example_banner.jpg)
+![Welcome](/images/physical_layer/Fourier/example/example_banner.jpg)
 
 # Example of application of Fourier's Theorem
 
@@ -6,13 +6,13 @@ It should be clarified that the method applied in this example is a step by step
 
 This method is designed to find the various harmonic components next to the forward voltage value of a sequence of bits.
 
-Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](/Fourier/explanation/explanation_en.md)
+Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](/physical_layer/Fourier/explanation/explanation_en.md)
 
 ---
 
 For this example, the signal presented below will be used.
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 This signal has a logic `1` voltage of 1 volt and a logic `0` voltage of 0 volts.
 
@@ -43,7 +43,7 @@ Taking this into account, the integral $\int _ { 0 } ^ { 8 } g(t) dt$ reduces to
 
 In short, the area would be highlighted below:
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier_Resaltado.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier_highlighted.png)
 
 In this example and with the proposed conditions (Period = 8 seconds), the highlighted area is `3`. Therefore, the equation would be:
 
@@ -144,7 +144,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \
 \end{align}
 $$
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
@@ -256,7 +256,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 0 * sin(2 \pi * 0.125 * t)|^1_0 ) + \\
 \end{align}
 $$
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
@@ -552,6 +552,6 @@ If we analyze both images together, we realize that the peaks of the continuous 
 
 ![Example](/images/physical_layer/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 ---

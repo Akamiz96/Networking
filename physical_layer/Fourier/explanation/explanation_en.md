@@ -1,4 +1,4 @@
-![Welcome](/images/physical_layer/Fourier/Banner_Ondas.jpg)
+![Welcome](/images/physical_layer/Fourier/banner_waves.jpg)
 
 # ✒️ Fourier's theorem ✒️ 
 
@@ -8,7 +8,7 @@ The French physicist and mathematician [Jean–Baptiste Joseph Fourier](https://
 
 That is, a periodic signal can be built with an **infinite sum of sine and cosine signals**.
 
-![Ejemplo](/images/physical_layer/Fourier/Ejemplo_Fourier.gif)
+![Ejemplo](/images/physical_layer/Fourier/example_Fourier.gif)
 Image taken from: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Theoretical bases ➗

@@ -1,4 +1,4 @@
-![Welcome](/images/physical_layer/Fourier/Banner_Ondas.jpg)
+![Welcome](/images/physical_layer/Fourier/banner_waves.jpg)
 
 # ✒️ Teorema de Fourier ✒️
 
@@ -8,7 +8,7 @@ El físico y matemático francés [Jean–Baptiste Joseph Fourier](https://es.wi
 
 Es decir, una señal periódica se puede construir con una **suma infinita de señales seno y coseno**.
 
-![Ejemplo](/images/physical_layer/Fourier/Ejemplo_Fourier.gif)
+![Ejemplo](/images/physical_layer/Fourier/example_Fourier.gif)
 Imagen tomada de: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Bases teóricas ➗
