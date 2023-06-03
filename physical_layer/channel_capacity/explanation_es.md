@@ -38,8 +38,8 @@ Siendo:
 
 ### Nota: 
 
-Si la relación señal ruido se encuentra expresada en decibelios *db*, para poder aplicar la ecuación anteriormente mencionada se requiere hacer la transformación descrita a continuación: 
+If the signal-to-noise ratio is expressed in decibels *db*, in order to apply the aforementioned equation, it is necessary to carry out the transformation described below:
 
 $$
-(\frac{S}{N})_{db} = 10 * log_{10}(\frac{Potencia señal}{Potencia ruido}) = 10 * log_{10}(\frac{S}{N})
+( \frac{S}{N} )_{db} = 10 * log_{10}(\frac{Potencia señal}{Potencia ruido}) = 10 * log_{10}(\frac{S}{N})
 $$
