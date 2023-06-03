@@ -1,4 +1,4 @@
-![Welcome](/images/physical_layer/Fourier/example/example_banner.jpg)
+![Welcome](/images/physical_layer/Fourier/example/example_banner.jpg) 
 
 # Example of application of Fourier's Theorem
 

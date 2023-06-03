@@ -12,7 +12,7 @@ Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️
 
 Para este ejemplo, se usará la señal presentada a continuación. 
 
-![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/example_Fourier.png)
 
 Esta señal cuenta con un voltaje de `1` lógico de 1 voltio y un voltaje de `0` lógico de 0 voltios. 
 
