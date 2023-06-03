@@ -41,6 +41,9 @@ Siendo:
 If the signal-to-noise ratio is expressed in decibels *db*, in order to apply the aforementioned equation, it is necessary to carry out the transformation described below:
 
 $$
-(\frac{S}{N})_{db} = 10 * log(\frac{Potencia\_señal}{Potencia\_ruido})  \\
+(\frac{S}{N})_{db} = 10 * log ( \frac{Potencia\\_señal}{Potencia\\_ruido} ) \\
+$$
+
+$$
 (\frac{S}{N})_{db} = 10 * log(\frac{S}{N}) \\
 $$
