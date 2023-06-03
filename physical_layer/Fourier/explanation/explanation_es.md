@@ -1,4 +1,4 @@
-![Welcome](/images/Fourier/Banner_Ondas.jpg)
+![Welcome](/images/physical_layer/Fourier/Banner_Ondas.jpg)
 
 # ✒️ Teorema de Fourier ✒️
 
@@ -8,7 +8,7 @@ El físico y matemático francés [Jean–Baptiste Joseph Fourier](https://es.wi
 
 Es decir, una señal periódica se puede construir con una **suma infinita de señales seno y coseno**.
 
-![Ejemplo](/images/Fourier/Ejemplo_Fourier.gif)
+![Ejemplo](/images/physical_layer/Fourier/Ejemplo_Fourier.gif)
 Imagen tomada de: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Bases teóricas ➗
@@ -29,7 +29,7 @@ donde:
 
 Ejemplo de una señal seno se encuentra a continuación $y = sin(x)$: 
 
-![Sine Wave](/images/Fourier/sine.png)
+![Sine Wave](/images/physical_layer/Fourier/sine.png)
 
 ---
 Una señal cosenoidal está representada matemáticamente por:
@@ -48,7 +48,7 @@ donde:
 
 Ejemplo de una señal coseno se encuentra a continuación $y = sin(x)$: 
 
-![Cosine Wave](/images/Fourier/cosine.png)
+![Cosine Wave](/images/physical_layer/Fourier/cosine.png)
 
 ---
 La relación entre la señal seno y la señal coseno radica en: 

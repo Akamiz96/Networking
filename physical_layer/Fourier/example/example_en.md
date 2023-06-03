@@ -1,28 +1,28 @@
-![Welcome](/images/Fourier/example/Example_banner.jpg)
+![Welcome](/images/physical_layer/Fourier/example/Example_banner.jpg)
 
-# Ejemplo de aplicación del Teorema de Fourier
+# Example of application of Fourier's Theorem
 
-Cabe aclarar que método aplicado en este ejemplo, es un paso a paso diseñado para ingenieros que este es su primer acercamiento a Fourier y a la matemática detrás de este. 
+It should be clarified that the method applied in this example is a step by step designed for engineers as this is their first approach to Fourier and the mathematics behind it.
 
-Este método está diseñado para encontrar las distintas componentes armónicas junto al valor de voltaje directo de una secuencia de bits. 
+This method is designed to find the various harmonic components next to the forward voltage value of a sequence of bits.
 
-Se hace uso de las ecuaciones presentadas en [✒️ Teorema de Fourier ✒️](/Fourier/explanation/explanation_es.md)
-
----
-
-Para este ejemplo, se usará la señal presentada a continuación. 
-
-![Example](/images/Fourier/example/Ejemplo_Fourier.png)
-
-Esta señal cuenta con un voltaje de `1` lógico de 1 voltio y un voltaje de `0` lógico de 0 voltios. 
-
-El periodo `T` está definido por la cantidad de bits, en este caso 8 bits; lo que significará un periodo de 8 segundos para simplificar los cálculos. En dado caso que el periodo de la señal sea diferente, las ecuaciones deben ser ajustadas acorde. 
+Use is made of the equations presented in [✒️ Fourier's Theorem ✒️](/Fourier/explanation/explanation_en.md)
 
 ---
 
-El primer paso es calcular el valor *dc* de la señal. Para eso se utiliza la siguiente ecuación. 
+For this example, the signal presented below will be used.
 
-## Cálculo del valor *dc*
+![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
+
+This signal has a logic `1` voltage of 1 volt and a logic `0` voltage of 0 volts.
+
+The period `T` is defined by the number of bits, in this case 8 bits; which will mean a period of 8 seconds to simplify the calculations. In case the period of the signal is different, the equations must be adjusted accordingly.
+
+---
+
+The first step is to calculate the *dc* value of the signal. For that, the following equation is used.
+
+## Calculation of *dc* value
 
 $$
 \begin{align}
@@ -31,21 +31,21 @@ dc = \frac {1} {8} * \int _ { 0 } ^ { 8 } g(t) dt
 \end{align}
 $$
 
-En la primera ecuación ecuacion se presenta la forma de calcular el valor de la componente de voltaje directo. 
+In the first equation the way to calculate the value of the direct voltage component is presented.
 
-En la segunda ecuacion se reemplaza el valor de `T` por *8* que es el periodo de la señal, asumiendo que cada bit tiene una duración de 1 segundo. 
+In the second equation the value of `T` is replaced by *8*, which is the period of the signal, assuming that each bit has a duration of 1 second.
 
-Ahora bien, la integral $\int _ { 0 } ^ { 8 } g(t) dt$ se puede calcular a partir de la definición de una integral. 
+Now, the integral $\int _ { 0 } ^ { 8 } g(t) dt$ can be calculated from the definition of an integral.
 
-> Dada una función `f(x)` de una variable real `x` y un intervalo `[a,b]` de la recta real, **la integral es igual al área de la región del plano `xy` limitada entre la gráfica de `f`, el eje `x`, y las líneas verticales `x=a` y `x=b`**, donde son negativas las áreas por debajo del eje `x`.
+> Given a function `f(x)` of a real variable `x` and an interval `[a,b]` of the real line, **the integral is equal to the area of ​​the region of the `xy` plane bounded between the graph of `f`, the `x` axis, and the vertical lines `x=a` and `x=b`**, where the areas below the `x` axis are negative.
 
-Teniendo en cuenta esto, la integral $\int _ { 0 } ^ { 8 } g(t) dt$ se reduce a calcular el área bajo la curva que en este caso es la señal. 
+Taking this into account, the integral $\int _ { 0 } ^ { 8 } g(t) dt$ reduces to computing the area under the curve, which in this case is the signal.
 
-En resumen, el área sería el resaltado a continuación: 
+In short, the area would be highlighted below:
 
-![Example](/images/Fourier/example/Ejemplo_Fourier_Resaltado.png)
+![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier_Resaltado.png)
 
-En este ejemplo y con las condiciones propuestas (Periodo = 8 segundos), el área resaltada es `3`. Por ende, la ecuación quedaría:
+In this example and with the proposed conditions (Period = 8 seconds), the highlighted area is `3`. Therefore, the equation would be:
 
 $$
 \begin{align}
@@ -56,9 +56,9 @@ $$
 
 ---
 
-Ahora, el siguiente paso radica en el cálculo de los coeficientes de Fourier $a_n$ y $b_n$. Esto ya que los coeficientes $C_n$ y $\varphi_n$ dependen de estos dos, como se muestra a continuación. 
+Now, the next step is to calculate the Fourier coefficients $a_n$ and $b_n$. This is because the coefficients $C_n$ and $\varphi_n$ depend on these two, as shown below.
 
-## Cálculo del coeficiente $C_n$
+## Calculation of the coefficient $C_n$
 
 $$
 \begin{align}
@@ -66,11 +66,11 @@ C_n = \sqrt{a_n^2 + b_n^2}
 \end{align}
 $$
 
-Siendo:
-- *a_n* uno de los coeficientes de Fourier
-- *b_n* uno de los coeficientes de Fourier
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
 
-## Cálculo del coeficiente $\varphi_n$
+## Calculation of the coefficient $\varphi_n$
 
 $$
 \begin{align}
@@ -78,14 +78,14 @@ $$
 \end{align}
 $$
 
-Siendo:
-- *a_n* uno de los coeficientes de Fourier
-- *b_n* uno de los coeficientes de Fourier
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
 
 ---
-Empezando con $a_n$: 
+Starting with $a_n$:
 
-## Cálculo del coeficiente $a_n$
+## Calculation of the coefficient $a_n$
 
 $$
 \begin{align}
@@ -95,16 +95,16 @@ a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * n t)dt \\
 \end{align}
 $$
 
-Siendo:
-- *T* el periodo de la señal que se quiere transformar
-- *f* indica la frecuencia del armónico fundamental 
-- *t* indica el tiempo
+Being:
+- *T* the period of the signal to be transformed
+- *f* indicates the frequency of the fundamental harmonic
+- *t* indicates time
 
-En la ecuación `2` del bloque anterior, se reemplazan los valores de `T` y `f`, siendo estos, `8` (Periodo de la señal) y `0.125` ( $\frac{1}{T}$ )correspondientemente. 
+In the formula `2` of the previous block the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
 
-A partir de este punto, se puede empezar a calcular el coeficiente $a_n$ para cada armónico (1,2,3,4,5,6,7...). Este ejemplo se realizará con 7 armónicos. 
+From this point, you can start calculating the coefficient $a_n$ for each harmonic (1,2,3,4,5,6,7...). This example is done with 7 harmonics.
 
-### Para el armónico 1
+### For the 1st harmonic
 
 $$
 \begin{align}
@@ -113,9 +113,9 @@ a_n = 0.25 * \int _ {0} ^ {8} g(t) sin(2 \pi * 0.125 * t)dt
 \end{align}
 $$
 
-Aquí se reemplaza la variable `n` por `1` que es el armónico que se quiere calcular. Con esto, se obtiene la segunda ecuación del bloque anterior donde se puede calcular la integral. 
+Here the variable `n` is replaced by `1`, which is the harmonic to be calculated. With this, the equation `11` is obtained where the integral can be calculated.
 
-Teniendo en cuenta que: 
+Taking into account that:
 
 $$
 \begin{align}
@@ -123,7 +123,7 @@ $$
 \end{align}
 $$
 
-Se puede reestructurar la ecuación de $a_n$ como: 
+Formula `11` can be restructured as: 
 
 $$
 \begin{align}
@@ -132,7 +132,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * g(t) * cos(2 \pi * 0.125 * t)|^8_0 \\
 \end{align}
 $$
 
-El siguiente paso requiere el realizar el reemplazo de los límites. En este proceso hay que entender que la función `g(t)` es una función a trozos. Por ende, el cálculo de $a_n$ sería: 
+The next step requires performing the boundary replacement. In this process we must understand that the function `g(t)` is a piecewise function. Finally, the calculation of $a_n$ would be:
 
 $$
 \begin{align}
@@ -144,11 +144,11 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0 * cos(2 \pi * 0.125 * t)|^1_0 ) + \
 \end{align}
 $$
 
-![Example](/images/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
 
-Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
+Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
-Reduciendo los términos que se vean multiplicados por `0`, la ecuación que determina el coeficiente $a_n$ sería: 
+Reducing the terms that are multiplied by `0`, the equation that determines the coefficient $a_n$ would be:
 
 $$
 \begin{align}
@@ -158,7 +158,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 1 * cos(2 \pi * 0.125 * t)|^2_1 ) + \
 \end{align}
 $$
 
-Ahora, el siguiente paso es el cálculo de los límites de cada uno de los cosenos de la siguiente forma (se eliminan los `1` para que la fórmula sea más simple de escribir): 
+Now, the next step is to calculate the limits of each of the cosines as follows (the `1` are removed to make the formula easier to write):
 
 $$
 \begin{align}
@@ -168,7 +168,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( cos(2 \pi * 0.125 * 2) - cos(2 \pi * 
 \end{align}
 $$
 
-Resolviendo cada uno de las funciones cosenos: 
+Solving each of the cosine functions:
 
 $$
 \begin{align}
@@ -178,7 +178,7 @@ a_n = 0.25 * \frac{-1}{2 \pi * 0.125} * (( 0.0000 - 0.7071 ) + \\
 \end{align}
 $$
 
-Simplificando: 
+Simplifying:
 
 $$
 \begin{align}
@@ -189,13 +189,13 @@ a_n = - 0.2250 \\
 \end{align}
 $$
 
-Este sería el coeficiente $a_n$ para el armónico `1`. 
+This would be the coefficient $a_n$ for the `1` harmonic.
 
-Este proceso tiene que ser repetido para cada uno de los armónicos con los que se quiera trabajar. 
+This process has to be repeated for each of the harmonics with which you want to work.
 
 ---
 
-Siguiendo con $b_n$: 
+Continuing with $b_n$:
 
 ## Cálculo del coeficiente $b_n$
 
@@ -207,16 +207,16 @@ b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * n t)dt \\
 \end{align}
 $$
 
-Siendo:
-- *T* el periodo de la señal que se quiere transformar
-- *f* indica la frecuencia del armónico fundamental 
-- *t* indica el tiempo
+Being:
+- *T* the period of the signal to be transformed
+- *f* indicates the frequency of the fundamental harmonic
+- *t* indicates time
 
-En la ecuación `2` del bloque anterior, se reemplazan los valores de `T` y `f`, siendo estos, `8` (Periodo de la señal) y `0.125` ( $\frac{1}{T}$ )correspondientemente. 
+In the equation `2` of the previous block, the values ​​of `T` and `f` are replaced, these being `8` (Signal period) and `0.125` ( $\frac{1}{T}$ )correspondingly.
 
-A partir de este punto, se puede empezar a calcular el coeficiente $b_n$ para cada armónico (1,2,3,4,5,6,7...). Este ejemplo se realizará con 7 armónicos. 
+From this point, you can start calculating the coefficient $b_n$ for each harmonic (1,2,3,4,5,6,7...). This example will be done with 7 harmonics.
 
-### Para el armónico 1
+### For the 1st harmonic
 
 $$
 \begin{align}
@@ -225,9 +225,9 @@ b_n = 0.25 * \int _ {0} ^ {8} g(t) cos(2 \pi * 0.125 * t)dt
 \end{align}
 $$
 
-Aquí se reemplaza la variable `n` por `1` que es el armónico que se quiere calcular. Con esto, se obtiene la segunda ecuación del bloque anterior donde se puede calcular la integral. 
+Here the variable `n` is replaced by `1`, which is the harmonic to be calculated. With this, the second equation of the previous block is obtained where the integral can be calculated.
 
-Teniendo en cuenta que: 
+Taking into account that:
 
 $$
 \begin{align}
@@ -235,7 +235,7 @@ $$
 \end{align}
 $$
 
-Se puede reestructurar la ecuación de $b_n$ como: 
+The equation of $b_n$ can be restructured as:
 
 $$
 \begin{align}
@@ -244,7 +244,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * g(t) * sin(2 \pi * 0.125 * t)|^8_0 \\
 \end{align}
 $$
 
-El siguiente paso requiere el realizar el reemplazo de los límites. En este proceso hay que entender que la función `g(t)` es una función a trozos. Por ende, el cálculo de $a_n$ sería: 
+The next step requires performing the boundary replacement. In this process we must understand that the function `g(t)` is a piecewise function. Therefore, the calculation of $a_n$ would be:
 
 $$
 \begin{align}
@@ -256,11 +256,11 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 0 * sin(2 \pi * 0.125 * t)|^1_0 ) + \\
 \end{align}
 $$
 
-![Example](/images/Fourier/ejemplo/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
 
-Cada uno de los segmentos de la señal es separado en la solución de la integral y se multiplica cada función coseno por el valor del voltaje de la señal en ese tramo. 
+Each of the segments of the signal is separated in the solution of the integral and each cosine function is multiplied by the value of the voltage of the signal in that segment.
 
-Reduciendo los términos que se vean multiplicados por `0`, la ecuación que determina el coeficiente $a_n$ sería: 
+Reducing the terms that are multiplied by `0`, the equation that determines the coefficient $a_n$ would be:
 
 $$
 \begin{align}
@@ -270,7 +270,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 1 * sin(2 \pi * 0.125 * t)|^2_1 ) + \\
 \end{align}
 $$
 
-Ahora, el siguiente paso es el cálculo de los límites de cada uno de los cosenos de la siguiente forma (se eliminan los `1` para que la fórmula sea más simple de escribir): 
+Now, the next step is to calculate the limits of each of the cosines as follows (the `1` are removed to make the formula easier to write):
 
 $$
 \begin{align}
@@ -280,7 +280,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( sin(2 \pi * 0.125 * 2) - sin(2 \pi * 0
 \end{align}
 $$
 
-Resolviendo cada uno de las funciones cosenos: 
+Solving each of the cosine functions:
 
 $$
 \begin{align}
@@ -290,7 +290,7 @@ b_n = 0.25 * \frac{1}{2 \pi * 0.125} * (( 1.0000 - 0.7071 ) + \\
 \end{align}
 $$
 
-Simplificando: 
+Simplifying:
 
 $$
 \begin{align}
@@ -301,15 +301,15 @@ b_n = 0.0932 \\
 \end{align}
 $$
 
-Este sería el coeficiente $b_n$ para el armónico `1`. 
+This would be the coefficient $b_n$ for the `1` harmonic.
 
-Este proceso tiene que ser repetido para cada uno de los armónicos con los que se quiera trabajar. 
+This process has to be repeated for each of the harmonics with which you want to work.
 
 ---
 
-Al repetir este proceso con cada uno de los siete armónicos que se deseen utilizar se obtienen los siguientes coeficientes: 
+By repeating this process with each of the seven harmonics to be used, the following coefficients are obtained:
 
-| **Armónicos n** | **$a_n$**     | **$b_n$**      |
+| **Harmonics n** | **$a_n$**     | **$b_n$**      |
 |:---------------:|:-------------:|:--------------:|
 | **1**           | \-0,225079079 | 0,093230807    |
 | **2**           | 0,159154943   | \-0,477464829  |
@@ -321,9 +321,9 @@ Al repetir este proceso con cada uno de los siete armónicos que se deseen utili
 
 ---
 
-## Cálculo del coeficiente $C_n$
+## Calculation of the coefficient $C_n$
 
-Para calcular el coeficiente $C_n$ a partir de los coeficientes $a_n$ y $b_n$ solo se debe seguir la siguiente fórmula: 
+To calculate the coefficient $C_n$ from the coefficients $a_n$ and $b_n$, just follow the following formula:
 
 $$
 \begin{align}
@@ -331,13 +331,13 @@ C_n = \sqrt{a_n^2 + b_n^2}
 \end{align}
 $$
 
-Siendo:
-- *a_n* uno de los coeficientes de Fourier
-- *b_n* uno de los coeficientes de Fourier
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
 
-Siguiendo la ecuación anterior, la tabla se complementaría con una columna adicional de la siguiente forma: 
+Following the previous equation, the table would be complemented with an additional column as follows:
 
-| **Armónicos n** | **$a_n$**     | **$b_n$**      | **$C_n$**   |
+| **Harmonics n** | **$a_n$**     | **$b_n$**      | **$C_n$**   |
 |:---------------:|:-------------:|:--------------:|:-----------:|
 | **1**           | \-0,225079079 | 0,093230807    | 0,24362384  |
 | **2**           | 0,159154943   | \-0,477464829  | 0,503292121 |
@@ -347,12 +347,11 @@ Siguiendo la ecuación anterior, la tabla se complementaría con una columna adi
 | **6**           | 0,053051648   | 0,159154943    | 0,16776404  |
 | **7**           | \-0,032154154 | \-0,013318687  | 0,034803406 |
 
+---
 
---- 
+## Calculation of the coefficient $\varphi_n$
 
-## Cálculo del coeficiente $\varphi_n$
-
-Para calcular el coeficiente $\varphi_n$ a partir de los coeficientes $a_n$ y $b_n$ solo se debe seguir la siguiente fórmula: 
+To calculate the coefficient $C_n$ from the coefficients $a_n$ and $b_n$, just follow the following formula:
 
 $$
 \begin{align}
@@ -360,11 +359,11 @@ $$
 \end{align}
 $$
 
-Siendo:
-- *a_n* uno de los coeficientes de Fourier
-- *b_n* uno de los coeficientes de Fourier
+Being:
+- *a_n* one of the Fourier coefficients
+- *b_n* one of the Fourier coefficients
 
-Siguiendo la ecuación anterior, la tabla se complementaría con una columna adicional de la siguiente forma: 
+Following the previous equation, the table would be complemented with an additional column as follows:
 
 | **Armónicos n** | **$a\_n$**    | **$b\_n$**     | **$C\_n$**  | **$\\varphi\_n$** |
 |:---------------:|:-------------:|:--------------:|:-----------:|:-----------------:|
@@ -378,9 +377,9 @@ Siguiendo la ecuación anterior, la tabla se complementaría con una columna adi
 
 ---
 
-## Cálculo de los armónicos
+## Calculation of harmonics
 
-Ya con los valores de los distintos coeficientes, se puede realizar la construcción de las ecuaciones de cada uno de los armónicos. Para esto se debe tener en cuenta la siguiente ecuación: 
+Now with the values ​​of the different coefficients, the construction of the equations of each one of the harmonics can be carried out. For this, the following equation must be taken into account:
 
 $$
 \begin{align}
@@ -388,29 +387,28 @@ g(t) = dc + \sum _ { i = 1 } ^ { \infty } C_n * sin(2\pi n f t + \varphi_n)
 \end{align}
 $$
 
-Siendo: 
-- *dc* indica el valor de la componente de voltaje directo
-- $C_n$ indica el coeficiente de la función seno
-- *n* indica el número del armónico de la componente
-- *f* indica la frecuencia del armónico fundamental 
-- *t* indica el tiempo
-- $\varphi_n$ indica la fase inicial de la señal seno 
+Being:
+- *dc* indicates the value of the forward voltage component
+- *n* indicates the number of the harmonic of the component
+- *f* indicates the frequency of the fundamental harmonic
+- *t* indicates time
+- $\varphi_n$ indicates the initial phase of the sine signal
 
-De esta ecuación ya contamos con los siguientes valores calculados: 
-- *dc* - [ Cálculo del valor dc ](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-valor-dc)
-- $C_n$ - [ Cálculo del coeficiente ](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-c_n-1)
-- n - Depende cuál armónico se está calculando cambiará entre los valores 1, 2, 3, 4, 5, 6, 7, ...
-- *f* - Se calculó que, para este ejemplo la frecuencia fundamental es: `0.125 Hz`, la cual se encuentra relacionada con la ecuación:
+From this equation we already have the following calculated values:
+- *dc* - [Calculation of dc value](https://github.com/Akamiz96/Networking/blob/main/physical_layer/Fourier/example/example_en.md#calculation-of-dc-value)
+- $C_n$ - [Calculation of the coefficient](https://github.com/Akamiz96/Networking/blob/main/physical_layer/Fourier/example/example_en.md#calculation-of-the-coefficient-c_n)
+- n - Depends on which harmonic is being calculated it will change between the values ​​1, 2, 3, 4, 5, 6, 7, ...
+- *f* - It was calculated that, for this example, the fundamental frequency is: `0.125 Hz`, which is related to the equation:
 
 $$ 
 f = \frac {1} {T} 
 $$
 
-- $\varphi_n$ - [ Cálculo del coeficiente ](https://github.com/Akamiz96/Networking/blob/main/Fourier/example/example_es.md#c%C3%A1lculo-del-coeficiente-varphi_n)
+- $\varphi_n$ - [Calculation of the coefficient](https://github.com/Akamiz96/Networking/blob/main/physical_layer/Fourier/example/example_en.md#calculation-of-the-coefficient-varphi_n)
 
-El único valor que hace falta dentro de la ecuación es el del tiempo ( *t* ). Este simplemente es la serie de tiempo sobre la cual se calculará cada punto de las distintas funciones seno para su graficación. 
+The only value that is missing within the equation is that of time ( *t* ). This is simply the time series on which each point of the different sine functions will be calculated for its graphing.
 
-En la siguiente tabla se enuncia el valor en diferentes tiempos *t* para cada uno de los 8 armónicos junto con el valor *dc*. 
+The following table lists the value at different times *t* for each of the 8 harmonics together with the value *dc*.
 
 | **t**   | **g0(t)** | **g1(t)**    | **g2(t)**    | **g3(t)**    | **g4(t)**    | **g5(t)**    | **g6(t)**    | **g7(t)**    |
 |:-------:|:---------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
@@ -496,66 +494,64 @@ En la siguiente tabla se enuncia el valor en diferentes tiempos *t* para cada un
 | **7,9** | 0,375     | 0,110602909  | -0,496483763 | -0,193639584 | 0,049181582  | 0,083178382  | 0,117723149  | 0,005444452  |
 | **8**   | 0,375     | 0,093230807  | -0,477464829 | -0,181129655 | 6,35624E-15  | 0,108677793  | 0,159154943  | -0,013318687 |
 
+---
+
+## Display of harmonics
+
+With this table already completed, each of the harmonic components of the signal can be visualized.
+
+Each one is shown below starting with the value *dc*.
+
+![Example](/images/physical_layer/Fourier/example/signal/DC.png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g1(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g2(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g3(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g4(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g5(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g6(t).png)
+
+![Example](/images/physical_layer/Fourier/example/signal/g7(t).png)
 
 ---
 
-## Visualización de los armónicos
+## Sum of harmonics
 
-Con esta tabla ya completada se pueden visualizar cada una de las componentes armónicas de la señal. 
+However, to generate the desired signal, each of the harmonics must be added (including the *dc* value).
 
-A continuación se muestran cada una empezando por el valor *dc*. 
+The following images show the different sums; starting only with the value *dc* and continuing with the sum of one in one of the different harmonics.
 
-![Example](/images/Fourier/example/signal/DC.png)
+![Example](/images/physical_layer/Fourier/example/signal/DC.png)
 
-![Example](/images/Fourier/example/signal/g1(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t).png)
 
-![Example](/images/Fourier/example/signal/g2(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t).png)
 
-![Example](/images/Fourier/example/signal/g3(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t).png)
 
-![Example](/images/Fourier/example/signal/g4(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t).png)
 
-![Example](/images/Fourier/example/signal/g5(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t).png)
 
-![Example](/images/Fourier/example/signal/g6(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t)%2Bg6(t).png)
 
-![Example](/images/Fourier/example/signal/g7(t).png)
-
-
----
-
-## Suma de armónicos
-
-Ahora bien, para generar la señal deseada, se deben sumar cada uno de los armónicos (incluyendo el valor *dc*). 
-
-En las siguientes imágenes se observan las distintas sumas; empezando solo por el valor *dc* y continuando con la suma de uno en uno de los distintos armónicos. 
-
-![Example](/images/Fourier/example/signal/DC.png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t).png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t).png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t).png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t).png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t).png)
-
-![Example](/images/Fourier/example/signal/DC%2Bg1(t)%2Bg2(t)%2Bg3(t)%2Bg4(t)%2Bg5(t)%2Bg6(t).png)
-
-![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
 
 ---
 
-## Comparación con la señal inicial
+## Comparison with initial signal
 
-Ahora bien, la última imagen presentada se relaciona con la señal inicial con la que parte el ejemplo. 
+Now, the last image presented is related to the initial signal with which the example starts.
 
-Si analizamos ambas imágenes conjutamente, nos damos cuenta de que los picos de la señal continua se encuentran correlacionados con los niveles altos de la señal. 
+If we analyze both images together, we realize that the peaks of the continuous signal are correlated with the high levels of the signal.
 
-![Example](/images/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
+![Example](/images/physical_layer/Fourier/example/signal/DC+g1(t)+g2(t)+g3(t)+g4(t)+g5(t)+g6(t)+g7(t).png)
 
-![Example](/images/Fourier/example/Ejemplo_Fourier.png)
+![Example](/images/physical_layer/Fourier/example/Ejemplo_Fourier.png)
 
 ---

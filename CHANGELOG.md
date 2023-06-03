@@ -28,3 +28,5 @@
 - Adds comparison parragraph between Fourier and original signal - 02/06/2023
 - Adds exercises for Fourier - 02/06/2023
 - Adds references for example and exercise pages in `README.md` file - 02/06/2023
+---
+- Restructuring repository organization - 03/06/2023

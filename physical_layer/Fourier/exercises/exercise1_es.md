@@ -1,4 +1,4 @@
-![Welcome](/images/Fourier/exercise/Exercise_banner.jpg)
+![Welcome](/images/physical_layer/Fourier/exercise/Exercise_banner.jpg)
 
 # Ejercicios para practicar
 

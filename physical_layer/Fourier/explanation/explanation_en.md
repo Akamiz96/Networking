@@ -1,4 +1,4 @@
-![Welcome](/images/Fourier/Banner_Ondas.jpg)
+![Welcome](/images/physical_layer/Fourier/Banner_Ondas.jpg)
 
 # ✒️ Fourier's theorem ✒️ 
 
@@ -8,7 +8,7 @@ The French physicist and mathematician [Jean–Baptiste Joseph Fourier](https://
 
 That is, a periodic signal can be built with an **infinite sum of sine and cosine signals**.
 
-![Ejemplo](/images/Fourier/Ejemplo_Fourier.gif)
+![Ejemplo](/images/physical_layer/Fourier/Ejemplo_Fourier.gif)
 Image taken from: [eMe - apuntes de acústica](https://www.eumus.edu.uy/eme/ensenanza/acustica/presentaciones/fisica/frecuencia/fourier1.html)
 
 ## ➗ Theoretical bases ➗
@@ -29,7 +29,7 @@ where:
 
 Example of a sine signal is below $y = sin(x)$:
 
-![Sine Wave](/images/Fourier/sine.png)
+![Sine Wave](/images/physical_layer/Fourier/sine.png)
 
 ---
 A cosine signal is represented mathematically by:
@@ -48,7 +48,7 @@ where:
 
 Example of a cosine signal is below $y = sin(x)$:
 
-![Cosine Wave](/images/Fourier/cosine.png)
+![Cosine Wave](/images/physical_layer/Fourier/cosine.png)
 
 ---
 The relationship between the sine signal and the cosine signal lies in:
