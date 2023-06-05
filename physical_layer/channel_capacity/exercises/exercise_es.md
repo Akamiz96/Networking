@@ -8,6 +8,15 @@
 
 <details> 
   <summary>Respuesta: </summary>
+    $$
+    \begin{aligned} 
+    C_{bps} = 2 * H * Log_2(V) \\
+    C_{bps} = 2 * 4000 * Log_2(128) \\
+    C_{bps} = 8000 * Log_2(128) \\
+    C_{bps} = 8000 * 7 \\
+    C_{bps} = 56000 \\
+    \end{aligned} 
+    $$
    6200 bps
 </details>
 
