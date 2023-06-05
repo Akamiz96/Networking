@@ -36,17 +36,21 @@ $$
 Replacing: 
 
 $$
+\begin{align} 
 40 = 10 * log(\frac{S}{N}) \\
 \frac{40}{10} = log(\frac{S}{N}) \\
 4 = log(\frac{S}{N}) \\
-10^4 = \frac{S}{N}
+10^4 = \frac{S}{N} \\
+\end{align}
 $$
 
 Now, with this value, the maximum capacity of the channel can already be calculated:
 
 $$
+\begin{align} 
 C_{bps} = H * Log_2(1 + \frac{S}{N}) \\
 C_{bps} = 10^6 * Log_2(1 + 10^4) \\
 C_{bps} = 10^6 * 13.28 \\
-C_{bps} = 13.28 [Mbps]
+C_{bps} = 13.28 [Mbps] \\
+\end{align}
 $$
