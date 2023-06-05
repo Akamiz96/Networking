@@ -1,6 +1,6 @@
 ![Welcome](/images/physical_layer/Fourier/exercise/exercise_banner.jpg)
 
-# Ejercicios para practicar
+# 📒 Ejercicios para practicar 📒
 
 1. Realizar el procedimiento para hallar la señal continua para las siguientes secuencias de bits: 
 

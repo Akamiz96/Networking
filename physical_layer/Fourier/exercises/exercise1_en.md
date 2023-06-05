@@ -1,6 +1,6 @@
 ![Welcome](/images/physical_layer/Fourier/exercise/exercise_banner.jpg)
 
-# Exercises to practice
+# 📒 Exercises to practice 📒
 
 1. Carry out the procedure to find the continuous signal for the following bit sequences:
 

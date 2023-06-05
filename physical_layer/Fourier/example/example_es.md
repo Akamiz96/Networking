@@ -1,6 +1,6 @@
 ![Welcome](/images/physical_layer/Fourier/example/example_banner.jpg)
 
-# Ejemplo de aplicación del Teorema de Fourier 
+# 🧑‍💻 Ejemplo de aplicación del Teorema de Fourier 🧑‍💻
 
 Cabe aclarar que método aplicado en este ejemplo, es un paso a paso diseñado para ingenieros que este es su primer acercamiento a Fourier y a la matemática detrás de este. 
 

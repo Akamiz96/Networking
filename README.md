@@ -7,10 +7,19 @@
 ----
 
 ## Table of Content
-1. Physical Layer
-   1. [✒️ Fourier's theorem ✒️](Fourier/explanation/explanation_en.md)
-   2. [✒️ Teorema de Fourier ✒️](Fourier/explanation/explanation_es.md)
-   3. [Ejemplo de aplicación del Teorema de Fourier](Fourier/example/example_es.md)
-   4. [Example of application of Fourier's Theorem](Fourier/example/example_en.md)
-   5. [Ejercicios para practicar](Fourier/exercises/exercise1_es.md)
-   6. [Exercises to practice](Fourier/exercises/exercise1_en.md)
+1. Physical Layer:
+   1. Teorema de Fourier / Fourier's theorem:
+      - [✒️ Fourier's theorem ✒️](/physical_layer/Fourier/explanation/explanation_en.md)
+      - [✒️ Teorema de Fourier ✒️](/physical_layer/Fourier/explanation/explanation_es.md)
+   2. Ejemplo de aplicación del Teorema de Fourier / Example of application of Fourier's Theorem
+      - [🧑‍💻 Ejemplo de aplicación del Teorema de Fourier 🧑‍💻](/physical_layer/Fourier/example/example_es.md)
+      - [🧑‍💻 Example of application of Fourier's Theorem 🧑‍💻](/physical_layer/Fourier/example/example_en.md)
+   3. Ejercicios para practicar / Exercises to practice
+      - [📒 Ejercicios para practicar 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
+      - [📒 Exercises to practice 📒](/physical_layer/Fourier/exercises/exercise1_en.md)
+   4. Capacidad máxima del canal /  Maximum channel capacity
+      - [✒️ Capacidad máxima del canal ✒️](/physical_layer/channel_capacity/explanation/explanation_es.md)
+      - [✒️ Maximum channel capacity ✒️](/physical_layer/channel_capacity/explanation/explanation_en.md)
+   5. Ejemplo de aplicación capacidad máxima del canal / Application example maximum channel capacity
+      - [🧑‍💻 Ejemplo de aplicación capacidad máxima del canal 🧑‍💻](/physical_layer/channel_capacity/example/example_es.md)
+      - [🧑‍💻 Example of application maximum channel capacity 🧑‍💻](/physical_layer/channel_capacity/example/example_en.md)
