@@ -36,3 +36,4 @@
 - Updates `README.md` file. - 05/06/2023
 - Adds first example in `example` files for channel capacity. - 05/06/2023
 - Adds second example in `example` files for channel capacity. - 05/06/2023
+- Adds third example in `example` files for channel capacity. - 05/06/2023

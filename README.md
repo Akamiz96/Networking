@@ -15,11 +15,14 @@
       - [🧑‍💻 Ejemplo de aplicación del Teorema de Fourier 🧑‍💻](/physical_layer/Fourier/example/example_es.md)
       - [🧑‍💻 Example of application of Fourier's Theorem 🧑‍💻](/physical_layer/Fourier/example/example_en.md)
    3. Ejercicios para practicar / Exercises to practice
-      - [📒 Ejercicios para practicar 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
-      - [📒 Exercises to practice 📒](/physical_layer/Fourier/exercises/exercise1_en.md)
+      - [📒 Ejercicios para practicar Teorema de Fourier 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
+      - [📒 Exercises to practice Fourier's theorem 📒](/physical_layer/Fourier/exercises/exercise1_en.md)
    4. Capacidad máxima del canal /  Maximum channel capacity
       - [✒️ Capacidad máxima del canal ✒️](/physical_layer/channel_capacity/explanation/explanation_es.md)
       - [✒️ Maximum channel capacity ✒️](/physical_layer/channel_capacity/explanation/explanation_en.md)
    5. Ejemplo de aplicación capacidad máxima del canal / Application example maximum channel capacity
       - [🧑‍💻 Ejemplos de aplicación capacidad máxima del canal 🧑‍💻](/physical_layer/channel_capacity/example/example_es.md)
       - [🧑‍💻 Examples of application maximum channel capacity 🧑‍💻](/physical_layer/channel_capacity/example/example_en.md)
+   6. Ejercicios para practicar / Exercises to practice
+      - [📒 Ejercicios para practicar Capacidad máxima del canal 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
+      - [📒 Exercises to practice Maximum channel capacity 📒](/physical_layer/Fourier/exercises/exercise1_en.md)
