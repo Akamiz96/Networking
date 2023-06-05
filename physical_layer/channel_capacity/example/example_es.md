@@ -98,3 +98,34 @@ C_{bps} = H * Log_2(1 + \frac{S}{N}) \\
 100.6 [db] = \frac{S}{N}
 \end{align} 
 $$
+
+---
+
+> Conociendo que la señal voz en un canal telefónico contiene  frecuencias  máximas  del  orden  de  los  4  KHz  (4000Hz),  indique  la 
+velocidad mínima para transmitir la señal por un canal de voz digital (explique). Además, si esas muestras se cuantifican en 128 niveles, qué velocidad de flujo de datos se requiere en el canal para poder transmitir las muestras. 
+
+Teniendo en cuenta los valores provistos por el problema, se puede utilizar la tasa de Nyquist para solucionar el problema:
+
+## Tasa de Nyquist
+
+$$
+C_{bps} = 2 * H * Log_2(V)
+$$
+
+Siendo: 
+- C_{bps} la capacidad máxima del canal en bits por segundo.
+- *H* ancho de banda del canal de comunicación en Hertz *Hz*. 
+- *V* número de niveles de amplitud de la señal.
+
+Reemplazando los valores dados en el enunciado: 
+
+$$
+\begin{aligned} 
+C_{bps} = 2 * H * Log_2(V) \\
+C_{bps} = 2 * 4000 * Log_2(128) \\
+C_{bps} = 8000 * Log_2(128) \\
+C_{bps} = 8000 * 7 \\
+C_{bps} = 56000 \\
+\end{aligned} 
+$$
+

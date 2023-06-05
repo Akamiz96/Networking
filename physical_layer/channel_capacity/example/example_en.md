@@ -98,3 +98,6 @@ C_{bps} = H * Log_2(1 + \frac{S}{N}) \\
 100.6 [db] = \frac{S}{N}
 \end{align} 
 $$
+
+---
+
