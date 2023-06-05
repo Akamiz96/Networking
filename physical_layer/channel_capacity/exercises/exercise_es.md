@@ -6,6 +6,10 @@
 
 > Si suponemos que un canal de voz con un ancho de banda de 3100 Hz se utiliza con un módem para transmitir datos digitales (2 niveles), ¿cuál sería la capacidad del canal? 
 
->! 6200 bps
+<details> 
+  <summary>Respuesta: </summary>
+   6200 bps
+</details>
+
 
 > 
