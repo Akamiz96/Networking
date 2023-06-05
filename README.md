@@ -21,5 +21,5 @@
       - [✒️ Capacidad máxima del canal ✒️](/physical_layer/channel_capacity/explanation/explanation_es.md)
       - [✒️ Maximum channel capacity ✒️](/physical_layer/channel_capacity/explanation/explanation_en.md)
    5. Ejemplo de aplicación capacidad máxima del canal / Application example maximum channel capacity
-      - [🧑‍💻 Ejemplo de aplicación capacidad máxima del canal 🧑‍💻](/physical_layer/channel_capacity/example/example_es.md)
-      - [🧑‍💻 Example of application maximum channel capacity 🧑‍💻](/physical_layer/channel_capacity/example/example_en.md)
+      - [🧑‍💻 Ejemplos de aplicación capacidad máxima del canal 🧑‍💻](/physical_layer/channel_capacity/example/example_es.md)
+      - [🧑‍💻 Examples of application maximum channel capacity 🧑‍💻](/physical_layer/channel_capacity/example/example_en.md)

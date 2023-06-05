@@ -1,6 +1,8 @@
-# 🧑‍💻 Ejemplo de aplicación capacidad máxima del canal 🧑‍💻
+# 🧑‍💻 Ejemplos de aplicación capacidad máxima del canal 🧑‍💻
 
-Si se tiene un canal que usa ancho de banda de 1 Mhz que está expuesto al ruido. Considerando una SNR de 40dB, calcular la capacidad del canal.
+---
+
+> Si se tiene un canal que usa ancho de banda de 1 Mhz que está expuesto al ruido. Considerando una SNR de 40dB, calcular la capacidad del canal.
 
 Teniendo en cuenta que se considera un enlace con ruido, se aplica la tasa de Shannon, esto es:
 
@@ -52,5 +54,47 @@ C_{bps} = H * Log_2(1 + \frac{S}{N}) \\
 C_{bps} = 10^6 * Log_2(1 + 10^4) \\
 C_{bps} = 10^6 * 13.28 \\
 C_{bps} = 13.28 [Mbps] \\
+\end{align} 
+$$
+
+---
+
+> Suponga un canal con una capacidad proyectada de 20 Mbps. El ancho de banda del canal es de 3Mhz. ¿Cuál es la relación S/N requerido para obtener dicha capacidad?
+
+Teniendo en cuenta que se considera un enlace con ruido, se aplica la tasa de Shannon, esto es:
+
+## Tasa de Shannon
+
+$$
+C_{bps} = H * Log_2(1 + \frac{S}{N})
+$$
+
+Siendo:
+- C_{bps} la capacidad máxima del canal en bits por segundo.
+- *H* ancho de banda del canal de comunicación en Hertz *Hz*. 
+- $\frac{S}{N}$ Relación señal ruido.
+  - *S* potencia de la señal útil, que puede estar expresada en vatios *W*
+  - *N* potencia del ruido presente en el canal que trata de enmascarar a la señal útil.
+
+Para este caso, se sabe que:
+
+$$
+C_{bps} = 20 [Mbps]
+$$
+
+$$
+H = 3 [Mhz]
+$$
+
+Ahora bien, con estos valores, ya se puede calcular la relación S/N:
+
+$$
+\begin{align} 
+C_{bps} = H * Log_2(1 + \frac{S}{N}) \\
+20 * 10^6 = 3 * 10^6 * Log_2(1 + \frac{S}{N}) \\
+\frac{20}{3} = Log_2(1 + \frac{S}{N}) \\
+2^{\frac{20}{3}} = 1 + \frac{S}{N} \\
+2^{\frac{20}{3}} - 1 = \frac{S}{N} \\
+100.6 [db] = \frac{S}{N}
 \end{align} 
 $$
