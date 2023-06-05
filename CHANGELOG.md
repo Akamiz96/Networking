@@ -34,3 +34,4 @@
 - Adds channel capacity explanation (Nyquist & Shannon) - 03/06/2023
 ---
 - Updates `README.md` file. - 05/06/2023
+- Adds first example in `example` files. - 05/06/2023
