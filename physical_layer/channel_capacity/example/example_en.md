@@ -101,3 +101,33 @@ $$
 
 ---
 
+> Knowing that the voice signal in a telephone channel contains maximum frequencies of the order of 4 KHz (4000Hz), indicate the
+minimum speed to transmit the signal over a digital voice channel (explain). Also, if those samples are quantized to 128 levels, what data rate is required on the channel to be able to transmit the samples.
+
+Taking into account the values ​​provided by the problem, the Nyquist rate can be used to solve the problem:
+
+## Nyquist's rate
+
+$$
+C_{bps} = 2 * H * Log_2(V)
+$$
+
+Being:
+- C_{bps} the maximum capacity of the channel in bits per second.
+- *H* bandwidth of the communication channel in Hertz *Hz*.
+- *V* number of amplitude levels of the signal.
+
+Substituting the values ​​given in the statement:
+
+$$
+\begin{aligned} 
+C_{bps} = 2 * H * Log_2(V) \\
+C_{bps} = 2 * 4000 * Log_2(128) \\
+C_{bps} = 8000 * Log_2(128) \\
+C_{bps} = 8000 * 7 \\
+C_{bps} = 56000 \\
+\end{aligned} 
+$$
+
+---
+
