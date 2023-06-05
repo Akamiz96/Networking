@@ -8,18 +8,7 @@
 
 <details> 
   <summary>Respuesta: </summary>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-    $$
-    \begin{aligned} 
-    C_{bps} = 2 * H * Log_2(V) \\
-    C_{bps} = 2 * 4000 * Log_2(128) \\
-    C_{bps} = 8000 * Log_2(128) \\
-    C_{bps} = 8000 * 7 \\
-    C_{bps} = 56000 \\
-    \end{aligned} 
-    $$
-   6200 bps
+  6200 bps
+  <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a">Solución</a>
 </details>
-
-
-> 
+ 
