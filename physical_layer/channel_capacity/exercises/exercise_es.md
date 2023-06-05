@@ -8,6 +8,7 @@
 
 <details> 
   <summary>Respuesta: </summary>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
     $$
     \begin{aligned} 
     C_{bps} = 2 * H * Log_2(V) \\
