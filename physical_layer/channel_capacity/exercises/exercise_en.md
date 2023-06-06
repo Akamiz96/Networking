@@ -6,7 +6,7 @@
 <details> 
   <summary>Answer: </summary>
   7.98 Mbps
-  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en-md">Solución</a>
+  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en.md">Solución</a>
 </details>
 
 ---
@@ -15,8 +15,8 @@
 
 <details> 
   <summary>Answer: </summary>
-  6200 bps
-  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en-md">Solución</a>
+  39.87 kbps
+  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en.md">Solución</a>
 </details>
 
 ---
@@ -26,7 +26,7 @@
 <details> 
   <summary>Answer: </summary>
   6200 bps
-  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en-md">Solución</a>
+  <a href="https://github.com/Akamiz96/Networking/blob/main/physical_layer/channel_capacity/exercises/solution/solution_en.md">Solución</a>
 </details>
 
 --- 
