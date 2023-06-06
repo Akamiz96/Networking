@@ -38,3 +38,5 @@
 - Adds second example in `example` files for channel capacity. - 05/06/2023
 - Adds third example in `example` files for channel capacity. - 05/06/2023
 - Adds `exercise` and `solution` files. - 05/06/2023
+---
+- Adds exercises and solutions in each corresponding file. - 05/06/2023

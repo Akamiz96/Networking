@@ -38,7 +38,7 @@ Siendo:
 
 ### Nota: 
 
-If the signal-to-noise ratio is expressed in decibels *db*, in order to apply the aforementioned equation, it is necessary to carry out the transformation described below:
+Si la relación señal/ruido se expresa en decibelios *db*, para aplicar la ecuación anterior es necesario realizar la transformación que se describe a continuación:
 
 $$
 (\frac{S}{N})_{db} = 10 * log ( \frac{Potencia\\_señal}{Potencia\\_ruido} ) \\
