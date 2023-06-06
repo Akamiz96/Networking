@@ -24,5 +24,5 @@
       - [🧑‍💻 Ejemplos de aplicación capacidad máxima del canal 🧑‍💻](/physical_layer/channel_capacity/example/example_es.md)
       - [🧑‍💻 Examples of application maximum channel capacity 🧑‍💻](/physical_layer/channel_capacity/example/example_en.md)
    6. Ejercicios para practicar / Exercises to practice
-      - [📒 Ejercicios para practicar Capacidad máxima del canal 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
-      - [📒 Exercises to practice Maximum channel capacity 📒](/physical_layer/Fourier/exercises/exercise1_en.md)
+      - [📒 Ejercicios para practicar Capacidad máxima del canal 📒](/physical_layer/channel_capacity/exercises/exercise1_es.md)
+      - [📒 Exercises to practice Maximum channel capacity 📒](/physical_layer/channel_capacity/exercises/exercise1_en.md)

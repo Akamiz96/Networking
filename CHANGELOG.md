@@ -41,3 +41,4 @@
 ---
 - Adds exercises and solutions in each corresponding file. - 05/06/2023
 - Adds 2 new exercises and solutions in each corresponding file. - 05/06/2023
+- Fixes link inside `README.md` file to redirect to exercises in channel capacity. - 05/06/2023
