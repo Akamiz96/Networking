@@ -46,3 +46,4 @@
 - Adds banner images to channel capacity `explanation`, `example`, `exercise` and `solution` files - 07/06/2023
 - Adds link layer folder - 07/06/2023
 - Adds `explanation` file for link layer - 07/06/2023
+- Adds explanation of the three methods fro framing in link layer - 07/06/2023

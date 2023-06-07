@@ -42,6 +42,14 @@ Se desea transmitir la siguiente trama:
 Siguiendo lo descrito enteriormente la secuencia quedaría: 
 
 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 0 | 0 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** |
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 
 ### Violaciones del código
+
+Para señalizar las condiciones de principio y final de trama, estas violaciones consisten en condiciones anormales de la transmisión. 
+
+Por ejemplo, la codificación *Manchester* establece la existencia de una transición **alto-bajo** o **bajo-alto** para la codificación de los bits. 
+
+La utilización de combinaciones sin transición **bajo-bajo** o **alto-alto** (y por tanto inválidas bajo el esquema *Manchester*) permite encapsular claramente las tramas, y no requieren el proceso de inserción del método anterior.
+
+![Code Violations](/images/link_layer/code_violations.png)

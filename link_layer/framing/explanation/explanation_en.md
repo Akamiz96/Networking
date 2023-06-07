@@ -26,3 +26,30 @@ El hecho de enviar una trama incorrecta al extremo origen para solicitarle que r
 
 ### Sequence of bits
 
+The procedure consists of inserting the sequence **`01111110`** at the start and end of each frame (known as the indicator byte).
+
+Adding control information to delimit the frames is frequently used, but it presents the problem that the same combinations used could appear in the message to be transmitted, generating an interpretation conflict in the receiver when detecting a false end of the frame.
+
+To prevent this sequence from repeating itself within the data, if **5 consecutive ones** are found, a `0` is automatically inserted. Thus, the flag byte will not be present in the data.
+
+#### Example
+
+You want to transmit the following frame:
+
+| 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 0 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+
+Following what was previously described, the sequence would be:
+
+| **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 0 | 0 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+
+### Code Violations
+
+To signal the frame start and end conditions, these violations consist of abnormal transmission conditions.
+
+For example, the *Manchester* encoding establishes the existence of a **high-low** or **low-high** transition for the encoding of the bits.
+
+The use of transitionless combinations **low-low** or **high-high** (and therefore invalid under the *Manchester* scheme) allows frames to be clearly encapsulated, and does not require the insertion process of the previous method.
+
+![Code Violations](/images/link_layer/code_violations.png)
