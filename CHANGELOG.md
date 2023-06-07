@@ -43,4 +43,4 @@
 - Adds 2 new exercises and solutions in each corresponding file. - 06/06/2023
 - Fixes link inside `README.md` file to redirect to exercises in channel capacity. - 06/06/2023
 ---
-- Adds banner images to channel capacity explanation, example, exercise and solution files - 07/06/2023
+- Adds banner images to channel capacity `explanation`, `example`, `exercise` and `solution` files - 07/06/2023
