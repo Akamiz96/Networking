@@ -44,3 +44,5 @@
 - Fixes link inside `README.md` file to redirect to exercises in channel capacity. - 06/06/2023
 ---
 - Adds banner images to channel capacity `explanation`, `example`, `exercise` and `solution` files - 07/06/2023
+- Adds link layer folder - 07/06/2023
+- Adds `explanation` file for link layer - 07/06/2023
