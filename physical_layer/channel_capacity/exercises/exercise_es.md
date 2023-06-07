@@ -1,3 +1,5 @@
+![Welcome](/images/physical_layer/channel_capacity/math_banner.jpg)
+
 # 📒 Ejercicios para practicar Capacidad máxima del canal 📒
 ---
 

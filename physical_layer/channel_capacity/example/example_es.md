@@ -1,3 +1,5 @@
+![Welcome](/images/physical_layer/channel_capacity/math_banner.jpg)
+
 # 🧑‍💻 Ejemplos de aplicación capacidad máxima del canal 🧑‍💻
 
 ---

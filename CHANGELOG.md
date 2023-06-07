@@ -39,6 +39,8 @@
 - Adds third example in `example` files for channel capacity. - 05/06/2023
 - Adds `exercise` and `solution` files. - 05/06/2023
 ---
-- Adds exercises and solutions in each corresponding file. - 05/06/2023
-- Adds 2 new exercises and solutions in each corresponding file. - 05/06/2023
-- Fixes link inside `README.md` file to redirect to exercises in channel capacity. - 05/06/2023
+- Adds exercises and solutions in each corresponding file. - 06/06/2023
+- Adds 2 new exercises and solutions in each corresponding file. - 06/06/2023
+- Fixes link inside `README.md` file to redirect to exercises in channel capacity. - 06/06/2023
+---
+- Adds banner images to channel capacity explanation, example, exercise and solution files - 07/06/2023
