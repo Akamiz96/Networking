@@ -1,4 +1,4 @@
-# Entramado
+# ✒️ Entramado ✒️
 
 La unidad de intercambio de información en los protocolos de enlace de datos es la **trama**.
 
@@ -43,6 +43,8 @@ Siguiendo lo descrito enteriormente la secuencia quedaría:
 
 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 0 | 0 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+
+![Sequence of bits](/images/link_layer/sequence_of_bits.png)
 
 ### Violaciones del código
 

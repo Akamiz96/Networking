@@ -47,3 +47,5 @@
 - Adds link layer folder - 07/06/2023
 - Adds `explanation` file for link layer - 07/06/2023
 - Adds explanation of the three methods fro framing in link layer - 07/06/2023
+---
+- Adds `exercise` files - 07/06/2023
