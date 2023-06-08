@@ -14,13 +14,13 @@ Por el contrario, al usar métodos de transmisión orientados a caracteres, como
 
 En este método se agrega un campo en la cabecera, para especificar el número de caracteres en la trama. 
 
-![Character Count without errors](/images/link_layer/character_count_1.png)
+![Character Count without errors](/images/link_layer/framing/character_count_1.png)
 
 En el momento en el cual la capa de enlace ve, en el extremo destinatario, la cuenta de caracteres, se entera del número de caracteres que siguen y, por consiguiente, donde termina la trama. 
 
 El problema de este algoritmo es que la cuenta puede distorsionarse por un error de transmisión.
 
-![Character Count with errors](/images/link_layer/character_count_2.png)
+![Character Count with errors](/images/link_layer/framing/character_count_2.png)
 
 El hecho de enviar una trama incorrecta al extremo origen para solicitarle que retransmita, tampoco ayuda de manera significativa, dado que el extremo destinatario no sabe cuántos caracteres debe omitir para llegar al inicio de la retransmisión.
 
@@ -44,7 +44,7 @@ Siguiendo lo descrito enteriormente la secuencia quedaría:
 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 0 | 0 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 
-![Sequence of bits](/images/link_layer/sequence_of_bits.png)
+![Sequence of bits](/images/link_layer/framing/sequence_of_bits.png)
 
 ### Violaciones del código
 
@@ -54,4 +54,4 @@ Por ejemplo, la codificación *Manchester* establece la existencia de una transi
 
 La utilización de combinaciones sin transición **bajo-bajo** o **alto-alto** (y por tanto inválidas bajo el esquema *Manchester*) permite encapsular claramente las tramas, y no requieren el proceso de inserción del método anterior.
 
-![Code Violations](/images/link_layer/code_violations.png)
+![Code Violations](/images/link_layer/framing/code_violations.png)

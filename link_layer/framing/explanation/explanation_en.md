@@ -14,13 +14,13 @@ On the contrary, when using character-oriented transmission methods, such as asy
 
 In this method a field is added in the header, to specify the number of characters in the frame.
 
-![Character Count without errors](/images/link_layer/character_count_1.png)
+![Character Count without errors](/images/link_layer/framing/character_count_1.png)
 
 By the time the link layer sees, at the receiving end, the character count, it learns the number of characters that follow, and therefore where the frame ends.
 
 The problem with this algorithm is that the account can be distorted by a transmission error.
 
-![Character Count with errors](/images/link_layer/character_count_2.png)
+![Character Count with errors](/images/link_layer/framing/character_count_2.png)
 
 El hecho de enviar una trama incorrecta al extremo origen para solicitarle que retransmita, tampoco ayuda de manera significativa, dado que el extremo destinatario no sabe cuántos caracteres debe omitir para llegar al inicio de la retransmisión.
 
@@ -44,7 +44,7 @@ Following what was previously described, the sequence would be:
 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | **0** | 0 | 0 | **0** | **1** | **1** | **1** | **1** | **1** | **1** | **0** |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-----:|:-:|:-:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 
-![Sequence of bits](/images/link_layer/sequence_of_bits.png)
+![Sequence of bits](/images/link_layer/framing/sequence_of_bits.png)
 
 ### Code Violations
 
@@ -54,4 +54,4 @@ For example, the *Manchester* encoding establishes the existence of a **high-low
 
 The use of transitionless combinations **low-low** or **high-high** (and therefore invalid under the *Manchester* scheme) allows frames to be clearly encapsulated, and does not require the insertion process of the previous method.
 
-![Code Violations](/images/link_layer/code_violations.png)
+![Code Violations](/images/link_layer/framing/code_violations.png)
