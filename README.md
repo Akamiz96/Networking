@@ -28,8 +28,8 @@
       - [📒 Exercises to practice Maximum channel capacity 📒](/physical_layer/channel_capacity/exercises/exercise_en.md)
 2. Capa de enlace de datos / Link Layer
    1. Entramado / Framing 
-      -  [✒️ Entramado ✒️](link_layer/framing/explanation/explanation_es.md)
-      -  [✒️ Framing ✒️](link_layer/framing/explanation/explanation_en.md)
+      -  [✒️ Entramado ✒️](/link_layer/framing/explanation/explanation_es.md)
+      -  [✒️ Framing ✒️](/link_layer/framing/explanation/explanation_en.md)
    2. Ejercicios para practicar / Exercises to practice
-      - [📒 Ejercicios para practicar Entramado 📒](/physical_layer/Fourier/exercises/exercise1_es.md)
-      - [📒 Exercises to practice Framing 📒](/physical_layer/Fourier/exercises/exercise1_es.md) 
+      - [📒 Ejercicios para practicar Entramado 📒](/link_layer/framing/exercise/exercise_es.md)
+      - [📒 Exercises to practice Framing 📒](/link_layer/framing/exercise/exercise_en.md) 
