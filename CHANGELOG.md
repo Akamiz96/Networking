@@ -57,3 +57,4 @@
 - Adds banner to the `exercise` files for framing - 09/06/2023
 - Adds banner to the `explanation` files for Hamming - 09/06/2023
 - Adds content to `explanation` files for Hamming until ***Hamming distance*** - 09/06/2023
+- Adds content to `explanation` files for Hamming until ***Hamming distance*** graphs - 09/06/2023

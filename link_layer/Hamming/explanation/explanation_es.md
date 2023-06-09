@@ -35,6 +35,8 @@ La cantidad de posiciones de bits en la que difieren dos palabras codificadas se
 
 ---
 
+## Distancia de Hamming
+
 Por ejemplo, para convertir la palabra **“Casa”** en otra palabra diferente:
 
 - “**C**asa” en “**M**asa” ha cambiado una letra (un paso), por lo que la ***distancia de Hamming*** es **1**.
@@ -45,3 +47,34 @@ Por ejemplo, para convertir la palabra **“Casa”** en otra palabra diferente:
 Para la numeración binaria, la ***distancia de Hamming*** son los bits que cambian de un grupo de bits a otro grupo de bits.
 
 ---
+
+## Espacio de Hamming 
+
+El espacio de Hamming son todas las combinaciones de cadenas de bits del mismo tamaño. Es decir, son todos los puntos de una dimensión N.
+
+Por ejemplo, para binario habría un total de $𝟐^𝑵$ puntos/combinaciones en el “*Espacio de Hamming*”.
+
+![Hamming Space 4 bits](/images/link_layer/Hamming/Hamming_Space_4_bits.png)
+
+---
+
+Teniendo en cuenta los conceptos de ***Distancia de Hamming*** y ***Espacio de Hamming*** se puede construir un diagrama que representa cambios de distancia de 1 entre distintas palabras codificadas de *r* bits.
+
+Con solo 1 bit, el ***Espacio de Hamming*** sería de 2 y la relación de estas dos palabras con respecto a la ***Distancia de Hamming*** sería como se muesta en la imagen siguiente: 
+
+![1 bit](/images/link_layer/Hamming/bits/1_bit.png)
+
+Con 2 bits, el ***Espacio de Hamming*** sería de 4 y la relación de estas dos palabras con respecto a la ***Distancia de Hamming*** sería como se muesta en la imagen siguiente: 
+
+![2 bits](/images/link_layer/Hamming/bits/2_bits.png)
+
+Con 3 bits, el ***Espacio de Hamming*** sería de 8 y la relación de estas dos palabras con respecto a la ***Distancia de Hamming*** sería como se muesta en la imagen siguiente: 
+
+![3 bits](/images/link_layer/Hamming/bits/3_bits.png)
+
+Con 4 bits, el ***Espacio de Hamming*** sería de 16 y la relación de estas dos palabras con respecto a la ***Distancia de Hamming*** sería como se muesta en la imagen siguiente: 
+
+![4 bits](/images/link_layer/Hamming/bits/4_bits.png)
+
+
+
