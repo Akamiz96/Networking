@@ -75,3 +75,37 @@ With 3 bits, the ***Hamming Space*** would be 8 and the relationship of these tw
 With 4 bits, the ***Hamming Space*** would be 16 and the relationship of these two words with respect to the ***Hamming Distance*** would be as shown in the following image:
 
 ![4 bits](/images/link_layer/Hamming/bits/4_bits.png)
+
+---
+
+## Redundancy bits
+
+They are extra bits of information to try to correct errors or at least check that everything is correct.
+
+The original data plus the “redundancy bits” is known as the “Block Code”.
+
+### Redundancy codes
+
+- Parity
+- Repetition
+- Hamming codes
+
+#### Parity
+
+Parity consists of adding a bit, called the parity bit, which indicates whether the number of bits with the value `1` in the preceding data is even or odd.
+
+If a single bit were to change by error in transmission, the message will change parity and the error can be detected (note that the bit where the error occurs can be the same parity bit).
+
+The most common convention is that a parity value of `1` indicates that there are an odd number of 1s in the data, and a parity value of `0` indicates that there are an even number of 1s in the data.
+
+| **Information code**      | **Quantity of "1" in the code**  | **Parity bit**     |
+|:-------------------------:|:--------------------------------:|:------------------:|
+| 0010010                   | 2                                | 0                  |
+| 1110110                   | 5                                | 1                  |
+
+| **7 data bits**      | **Even parity** | **Odd parity**    |
+|:--------------------:|:---------------:|:-----------------:|
+| 0000000              | 000000**0**     | 000000**1**       |
+| 1010001              | 1010001**1**    | 1010001**0**      |
+| 1101001              | 1101001**0**    | 1101001**1**      |
+| 1111111              | 1111111**1**    | 1111111**0**      |

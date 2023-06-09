@@ -76,5 +76,36 @@ Con 4 bits, el ***Espacio de Hamming*** sería de 16 y la relación de estas dos
 
 ![4 bits](/images/link_layer/Hamming/bits/4_bits.png)
 
+---
 
+## Bits de redundancia
 
+Son bits extra a la información para intentar corregir los errores o al menos comprobar que todo esté correcto.
+
+Al dato original más los “bits de redundancia” se les conoce como “Bloque del código” (en inglés “Block Code”).
+
+### Códigos de redundancia
+
+- Paridad 
+- Repetición 
+- Códigos de Hamming
+
+#### Paridad
+
+La paridad consiste en añadir un bit, denominado bit de paridad, que indique si el número de los bits de valor `1` en los datos precedentes es par o impar. 
+
+Si un solo bit cambiara por error en la transmisión, el mensaje cambiará de paridad y el error se puede detectar (nótese que el bit donde se produzca el error puede ser el mismo bit de paridad). 
+
+La convención más común es que un valor de paridad `1` indica que hay un número impar de unos en los datos, y un valor de paridad de `0` indica que hay un número par de unos en los datos. 
+
+| **Código de información** | **Cantidad de "1" en el código** | **Bit de paridad** |
+|:-------------------------:|:--------------------------------:|:------------------:|
+| 0010010                   | 2                                | 0                  |
+| 1110110                   | 5                                | 1                  |
+
+| **7 bits de datos**  | **Paridad par** | **Paridad impar** |
+|:--------------------:|:---------------:|:-----------------:|
+| 0000000              | 000000**0**     | 000000**1**       |
+| 1010001              | 1010001**1**    | 1010001**0**      |
+| 1101001              | 1101001**0**    | 1101001**1**      |
+| 1111111              | 1111111**1**    | 1111111**0**      |
