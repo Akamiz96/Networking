@@ -1,3 +1,5 @@
+![Welcome](/images/link_layer/framing/bits_banner.jpg)
+
 # ✒️ Entramado ✒️
 
 La unidad de intercambio de información en los protocolos de enlace de datos es la **trama**.

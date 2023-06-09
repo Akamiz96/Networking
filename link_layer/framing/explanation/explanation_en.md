@@ -1,3 +1,5 @@
+![Welcome](/images/link_layer/framing/bits_banner.jpg)
+
 # ✒️ Framing ✒️
 
 The unit of exchange of information in data link protocols is the **frame**.

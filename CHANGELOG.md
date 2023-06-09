@@ -49,6 +49,8 @@
 - Adds explanation of the three methods fro framing in link layer - 07/06/2023
 ---
 - Adds `exercise` files - 07/06/2023
-- Adds first set of exercises in `exercise` files for framing in link layer - 07/06/2023
-- Adds second set of exercises in `exercise` files for framing in link layer - 07/06/2023
-- Adds `explanation` & `exercise` files for Hamming in link layer - 07/06/2023
+- Adds first set of exercises in `exercise` files for framing in link layer - 08/06/2023
+- Adds second set of exercises in `exercise` files for framing in link layer - 08/06/2023
+- Adds `explanation` & `exercise` files for Hamming in link layer - 08/06/2023
+---
+- Adds banner to the `explanation` files for framing - 09/06/2023
