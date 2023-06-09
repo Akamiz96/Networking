@@ -109,3 +109,18 @@ The most common convention is that a parity value of `1` indicates that there ar
 | 1010001              | 1010001**1**    | 1010001**0**      |
 | 1101001              | 1101001**0**    | 1101001**1**      |
 | 1111111              | 1111111**1**    | 1111111**0**      |
+
+#### Repetition
+
+Another code used was to repeat each bit of data several times to make sure the transmission was correct.
+
+For example, if the data bit being sent were a 1, a repeat code with n=3 would send "111". If the three received bits were not identical, there was an error.
+
+In a quiet environment, most of the time only one bit in each three-bit packet would change.
+
+Therefore, data of type `001`, `010`, and `100` correspond to bit `0`, while `110`, `101`, and `011` correspond to bit `1`.
+
+A code with this ability to reconstruct the original message in the presence of errors is known as an ***correcting code***.
+
+On the other hand, the repetition code is extremely inefficient, reducing the transmission speed by three in our original example, and its efficiency drops drastically as the number of times each bit is repeated increases to detect and correct more errors.
+

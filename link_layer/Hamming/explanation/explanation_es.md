@@ -109,3 +109,17 @@ La convención más común es que un valor de paridad `1` indica que hay un núm
 | 1010001              | 1010001**1**    | 1010001**0**      |
 | 1101001              | 1101001**0**    | 1101001**1**      |
 | 1111111              | 1111111**1**    | 1111111**0**      |
+
+#### Repetición
+
+Otro código utilizado, consistía en repetir cada bit de datos varias veces para asegurarse de que la transmisión era correcta. 
+
+Por ejemplo, si el bit de datos que se envía fuera un 1, un código de repetición con n=3, enviaría "111". Si los tres bits recibidos no eran idénticos, había un error.
+
+En un ambiente sin demasiado ruido, la mayoría de las veces solamente cambiaría un bit en cada paquete de tres bits. 
+
+Por lo tanto, datos del tipo `001`, `010`, y `100` se corresponden al bit `0`, mientras que `110`, `101`, y `011` se corresponden con el bit `1`. 
+
+Un código con esta capacidad de reconstruir el mensaje original en la presencia de errores se conoce como código ***corrector de errores***.
+
+Por otra parte, el código de la repetición es extremadamente ineficaz, pues reduce la velocidad de transmisión por tres en nuestro ejemplo original y su eficacia cae drásticamente al aumentar el número de veces que cada bit se repite para detectar y corregir más errores. 
