@@ -1,3 +1,5 @@
+![Welcome](/images/link_layer/framing/bits_sequence.jpg)
+
 # 📒 Exercises to practice Framing 📒
 
 ---

@@ -54,3 +54,4 @@
 - Adds `explanation` & `exercise` files for Hamming in link layer - 08/06/2023
 ---
 - Adds banner to the `explanation` files for framing - 09/06/2023
+- Adds banner to the `exercise` files for framing - 09/06/2023
