@@ -124,3 +124,46 @@ A code with this ability to reconstruct the original message in the presence of 
 
 On the other hand, the repetition code is extremely inefficient, reducing the transmission speed by three in our original example, and its efficiency drops drastically as the number of times each bit is repeated increases to detect and correct more errors.
 
+#### Hamming codes
+
+If more error-correcting bits are added alongside the message, and if those bits can be arranged so that different error bits produce different results, then the erroneous bits could be identified.
+
+The bit string is made up of data bits and parity bits mixed together (but not scrambled 😉)
+
+There are several nomenclatures for these codes:
+
+-hamming(3,1)
+-hamming(7,4)
+-Hamming(15,11)
+-Hamming(31,26)
+- Etc…
+
+Let's focus on “***Hamming(7,4)***”, which means that for every `7` bits that represent data there are `4` that are data bits and the remaining $7 – 4 = 3$ are “ ***parity bits***”.
+
+##### Steps
+
+1. All bits whose position is a power of two are used as parity bits (positions 1, 2, 4, 8, 16, 32, 64, etc.).
+2. The bits in the rest of the positions are used as data bits (positions 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, etc.).
+3. Each parity bit is obtained by calculating the parity of one of the data bits
+
+###### Example
+
+Let's focus on “Hamming(7,4)”, which means that for every 7 bits that represent data there are 4 that are Data bits and the remaining $7 – 4 = $3 are “parity bits”.
+
+**Unverified data**
+
+| **1** | **0** | **1** | **1** |
+|:-----:|:-----:|:-----:|:-----:|
+
+To make the interpretation of the process easier, the following table is created following steps `1` and `2`:
+
+1. All bits whose position is a power of two are used as parity bits (positions 1, 2, 4, 8, 16, 32, 64, etc.).
+2. The bits in the rest of the positions are used as data bits (positions 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, etc.).
+
+In this example bits `1`, `2` and `4` are parity bits, while bits `3`, `5`, `6` and `7` are data bits.
+
+Since the parity bits have not yet been calculated they are marked as `*`.
+
+| **1** | **2** | **3** | **4** | **5** | **6** | **7** |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| *     | *     | 1     | *     | 0     | 1     | 1     |

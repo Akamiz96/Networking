@@ -60,3 +60,5 @@
 - Adds content to `explanation` files for Hamming until ***Hamming distance*** graphs - 09/06/2023
 - Adds content to `explanation` files for Hamming until parity - 09/06/2023
 - Adds content to `explanation` files for Hamming until repetition - 09/06/2023
+---
+- Adds first step of explanation of Hamming codes - 11/06/2023

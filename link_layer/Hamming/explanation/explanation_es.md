@@ -123,3 +123,47 @@ Por lo tanto, datos del tipo `001`, `010`, y `100` se corresponden al bit `0`, m
 Un código con esta capacidad de reconstruir el mensaje original en la presencia de errores se conoce como código ***corrector de errores***.
 
 Por otra parte, el código de la repetición es extremadamente ineficaz, pues reduce la velocidad de transmisión por tres en nuestro ejemplo original y su eficacia cae drásticamente al aumentar el número de veces que cada bit se repite para detectar y corregir más errores. 
+
+#### Códigos de Hamming
+
+Si se añaden junto al mensaje más bits detectores-correctores de error y si esos bits se pueden ordenar de modo que diferentes bits de error producen diferentes resultados, entonces los bits erróneos podrían ser identificados.
+
+La cadena de bits se compone de bits de datos y bits de paridad mezclados (pero no revueltos 😉)
+
+Existen varias nomenclaturas para estos códigos:
+
+- Hamming(3,1)
+- Hamming(7,4)
+- Hamming(15,11)
+- Hamming(31,26)
+- Etc…
+
+Centrémonos en “***Hamming(7,4)***”, que quiere decir que por cada `7` bits que representan datos hay `4` que son bits de datos y los $7 – 4 = 3$ restantes son “***bits paridad***”.
+
+##### Pasos
+
+1. Todos los bits cuya posición es potencia de dos se utilizan como bits de paridad (posiciones 1, 2, 4, 8, 16, 32, 64, etc.). 
+2. Los bits del resto de posiciones son utilizados como bits de datos (posiciones 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, etc.). 
+3. Cada bit de paridad se obtiene calculando la paridad de alguno de los bits de datos
+
+###### Ejemplo 
+
+Centrémonos en “Hamming(7,4)”, que quiere decir que por cada 7 bits que representan datos hay 4 que son bits de Datos y los $7 – 4 = 3$ restantes son “bits paridad”.
+
+**Datos sin comprobación**
+
+| **1** | **0** | **1** | **1** |
+|:-----:|:-----:|:-----:|:-----:|
+
+Para hacer más fácil la interpretación del proceso se crea la siguiente tabla siguiendo los pasos `1` y `2`:
+
+1. Todos los bits cuya posición es potencia de dos se utilizan como bits de paridad (posiciones 1, 2, 4, 8, 16, 32, 64, etc.). 
+2. Los bits del resto de posiciones son utilizados como bits de datos (posiciones 3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, etc.). 
+
+En Este ejemplo los bits `1`, `2` y `4` son bits de paridad, mientras los bits `3`, `5`, `6` y `7` son los bits de datos.
+
+Como los bits de paridad aún no han sido calculados se marcan como `*`.
+
+| **1** | **2** | **3** | **4** | **5** | **6** | **7** |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| *     | *     | 1     | *     | 0     | 1     | 1     |
