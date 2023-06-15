@@ -33,3 +33,9 @@
    2. Ejercicios para practicar / Exercises to practice
       - [📒 Ejercicios para practicar Entramado 📒](/link_layer/framing/exercise/exercise_es.md)
       - [📒 Exercises to practice Framing 📒](/link_layer/framing/exercise/exercise_en.md) 
+   3. Entramado / Framing 
+      -  [✒️ Detección y corrección de errores ✒️](/link_layer/Hamming/explanation/explanation_es.md)
+      -  [✒️ Bug detection and correction ✒️](/link_layer/Hamming/explanation/explanation_en.md)
+   4. Ejercicios para practicar / Exercises to practice
+      - [📒 Ejercicios para practicar Hamming 📒](/link_layer/Hamming/exercise/exercise_es.md)
+      - [📒 Exercises to practice Hamming 📒](/link_layer/Hamming/exercise/exercise_en.md)
