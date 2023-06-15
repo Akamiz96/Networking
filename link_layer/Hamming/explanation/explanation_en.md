@@ -167,3 +167,58 @@ Since the parity bits have not yet been calculated they are marked as `*`.
 | **1** | **2** | **3** | **4** | **5** | **6** | **7** |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | *     | *     | 1     | *     | 0     | 1     | 1     |
+
+With the data bits and parity bits located in the table, the process of calculating the parity bits can begin.
+
+To carry out the process, each of the positions must be converted to its respective binary number as shown in the following table:
+
+|                            |     |     |     |     |     |     |     |
+|:--------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Binary position**        | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
+| **Decimal position**       | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| **Unverified data**        | *   | *   | 1   | *   | 0   | 1   | 1   |
+
+Now, apply step `3`.
+
+3. Each parity bit is obtained by calculating the parity of one of the data bits
+
+Let's start with the parity bit which is in the `1` position. The bits that will be used to calculate the parity bit that goes in this position are those whose position contains a `1` in the least significant bit.
+
+In the case of the parity bit that is in position `1`, the data bits in the positions will be used:
+
+- `3` (01**1**)
+- `5` (10**1**)
+- `7` (11**1**)
+
+This means, that for this example, the parity bit that is in the `1` position will have the value of `0` under an even parity scheme (even amount of `1` in the word to be transmitted).
+
+The parity bit that is in position `2` will be calculated in the same way, but using those data bits that are in positions that have a `1` in the second least significant bit.
+
+In the case of the parity bit that is in position `1`, the data bits in the positions will be used:
+
+- `3` (0**1**1)
+- `6` (1**1**0)
+- `7` (1**1**1)
+
+This means, that for this example, the parity bit that is in position `2` will have the value of `1` under an even parity scheme (even amount of `1` in the word to be transmitted).
+
+The parity bit that is in position `3` will be calculated in the same way, but using those data bits that are in positions that have a `1` in the most significant bit.
+
+In the case of the parity bit that is in position `3`, the data bits in the positions will be used:
+
+- `5` (**1**01)
+- `6` (**1**10)
+- `7` (**1**11)
+
+This means, that for this example, the parity bit that is in position `3` will have the value of `0` under an even parity scheme (even quantity of `1` in the word to be transmitted).
+
+With these parity bits already calculated, the table presented above can be completed; resulting in this:
+
+|                            |     |     |     |     |     |     |     |
+|:--------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Posición binario**       | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
+| **Posición decimal**       | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| **Datos sin comprobación** | *0* | *1* | 1   | *0* | 0   | 1   | 1   |
+
+---
+

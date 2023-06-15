@@ -167,3 +167,57 @@ Como los bits de paridad aún no han sido calculados se marcan como `*`.
 | **1** | **2** | **3** | **4** | **5** | **6** | **7** |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 | *     | *     | 1     | *     | 0     | 1     | 1     |
+
+Con los bits de datos y los bits de paridad ubicados en la tabla se puede comenzar el proceso de cálculo de los bits de paridad. 
+
+Para hacer el proceso, se deben convertir cada una de las posiciones a su respectivo número binario como se muestra en la tabla siguiente: 
+
+|                            |     |     |     |     |     |     |     |
+|:--------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Posición binario**       | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
+| **Posición decimal**       | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| **Datos sin comprobación** | *   | *   | 1   | *   | 0   | 1   | 1   |
+
+Ahora si, aplicar el paso `3`.
+
+3. Cada bit de paridad se obtiene calculando la paridad de alguno de los bits de datos
+
+Empecemos por el bit de paridad que está en la posición `1`. Los bits que se utilizarán para calcular el bit de paridad que va en esta posición son aquellos cuya posición contenga un `1` en el bit menos significativo. 
+
+Para el caso del bit de paridad que está en la posición `1` se utilizarán los bits de datos en las posiciones: 
+
+- `3` (01**1**)
+- `5` (10**1**)
+- `7` (11**1**)
+
+Esto quiere decir, que para este ejemplo, el bit de paridad que está en la posición `1` tendrá el valor de `0` bajo un esquema de paridad par (cantidad par de `1` en la palabra a transmitir).
+
+El bit de paridad que está en la posición `2` se calculará de la misma manera, pero utilizando aquellos bits de datos que se encuentren en posiciones que tengan un `1` en el segundo bit menos significativo.
+
+Para el caso del bit de paridad que está en la posición `1` se utilizarán los bits de datos en las posiciones: 
+
+- `3` (0**1**1)
+- `6` (1**1**0)
+- `7` (1**1**1)
+
+Esto quiere decir, que para este ejemplo, el bit de paridad que está en la posición `2` tendrá el valor de `1` bajo un esquema de paridad par (cantidad par de `1` en la palabra a transmitir).
+
+El bit de paridad que está en la posición `3` se calculará de la misma manera, pero utilizando aquellos bits de datos que se encuentren en posiciones que tengan un `1` en el bit más significativo. 
+
+Para el caso del bit de paridad que está en la posición `3` se utilizarán los bits de datos en las posiciones: 
+
+- `5` (**1**01)
+- `6` (**1**10)
+- `7` (**1**11)
+
+Esto quiere decir, que para este ejemplo, el bit de paridad que está en la posición `3` tendrá el valor de `0` bajo un esquema de paridad par (cantidad par de `1` en la palabra a transmitir).
+
+Con estos bits de paridad ya calculados se puede completar la tabla presentada anteriormente; dando como resultado esto: 
+
+|                            |     |     |     |     |     |     |     |
+|:--------------------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Posición binario**       | 001 | 010 | 011 | 100 | 101 | 110 | 111 |
+| **Posición decimal**       | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| **Datos sin comprobación** | *0* | *1* | 1   | *0* | 0   | 1   | 1   |
+
+---

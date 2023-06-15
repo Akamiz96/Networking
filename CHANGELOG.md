@@ -62,3 +62,5 @@
 - Adds content to `explanation` files for Hamming until repetition - 09/06/2023
 ---
 - Adds first step of explanation of Hamming codes - 11/06/2023
+---
+- Finish explanation of Hamming codes - 15/06/2023 
