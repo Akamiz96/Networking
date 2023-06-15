@@ -65,3 +65,4 @@
 ---
 - Finish explanation of Hamming codes - 15/06/2023 
 - Adds link to the `explanation` & `exercise` files in `README.md` file - 15/06/2023 
+- Adds first exercise for Hamming - 15/06/2023

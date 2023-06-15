@@ -2,7 +2,7 @@
 
 # 📒 Ejercicios para practicar Entramado 📒
 
--
+---
 
 > A partir de los siguientes flujos de datos, determinar el flujo de datos transmitidos usando la secuencia de bits estándar: 
 
